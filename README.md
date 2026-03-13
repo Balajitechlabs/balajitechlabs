@@ -107,6 +107,13 @@ const developer = {
 
 [![Ashutosh's github activity graph](https://github-readme-activity-graph.vercel.app/graph?username=Balajitechlabs&bg_color=0d1117&color=6366f1&line=a855f7&point=ec4899&area=true&hide_border=true&area_color=6366f120)](https://github-readme-activity-graph.vercel.app/graph?username=Balajitechlabs&bg_color=0d1117&color=6366f1&line=a855f7&point=ec4899&area=true&hide_border=true&area_color=6366f120)
 
+### 📈 GitHub Readme Stats – yearly & “all time” 
+![Balaji's GitHub Stats](https://github-readme-stats.vercel.app/api?username=Balajitechlabs&show_icons=true&theme=radical)
+
+
+###📈Commit/Contribution streaks (yearly)
+![GitHub Streak](https://github-readme-streak-stats.herokuapp.com?user=Balajitechlabs&theme=radical&hide_border=true)
+
 </div>
 
 ---
