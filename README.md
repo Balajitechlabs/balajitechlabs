@@ -117,7 +117,7 @@ const developer = {
 
 | Project | Stars | Forks | Language | Description |
 |:--------|:-----:|:-----:|:--------:|:------------|
-| [official_protfolio_website](https://github.com/Balajitechlabs/official_protfolio_website.git) | ⭐ | 🍴 | TypeScript | Award-winning portfolio with 3D animations |
+| [official_protfolio_website_repo](https://github.com/Balajitechlabs/official_protfolio_website.git) | ⭐ | 🍴 | TypeScript | Award-winning portfolio with 3D animations |
 
 </div>
 
@@ -165,10 +165,10 @@ const developer = {
 
 <div align="center">
 
-<a href="mailto:balaji@balajitechlab.com">
+<a href="mailto:admin@balajitechlab.com">
   <img src="https://img.shields.io/badge/Email-ME-6366f1?style=for-the-badge&logo=gmail&logoColor=white" alt="Email">
 </a>
-<a href="https://tech.balajitechlab.com/">
+<a href="https://protfolio.balajitechlab.com/">
   <img src="https://img.shields.io/badge/Portfolio-Visit-6366f1?style=for-the-badge&logo=google-chrome&logoColor=white" alt="Portfolio">
 </a>
 
