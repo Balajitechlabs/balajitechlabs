@@ -27,7 +27,7 @@ const developer = {
   currentlyWorking: ["React", "Three.js", "GSAP", "TypeScript"],
   funFact: "I turn coffee into code ☕ → 💻",
   goals: ["Building amazing web experiences", "Contributing to open source", "Learning new technologies"],
-  email: "balaji@balajitechlab.com"
+  email: "admin@balajitechlab.com"
 };
 ```
 
@@ -117,7 +117,7 @@ const developer = {
 
 | Project | Stars | Forks | Language | Description |
 |:--------|:-----:|:-----:|:--------:|:------------|
-| [fullstackprotfolio](https://github.com/Balajitechlabs/fullstackprotfolio) | ⭐ | 🍴 | TypeScript | Award-winning portfolio with 3D animations |
+| [official_protfolio_website](https://github.com/Balajitechlabs/official_protfolio_website.git) | ⭐ | 🍴 | TypeScript | Award-winning portfolio with 3D animations |
 
 </div>
 
