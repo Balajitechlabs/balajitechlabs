@@ -101,16 +101,9 @@ const developer = {
 
 </div>
 
----
-
 ### 🔥 Current Streak
 
 <div align="center">
-
-[![GitHub Streak](https://streak-stats.demolab.com/?user=Balajitechlabs&theme=radical&background=00000000&border=6366f1&stroke=6366f1&fire=ec4899&ring=a855f7&currStreakLabel=a855f7&sideNums=a855f7&currStreakNum=ec4899&sideLabels=a855f7&dates=6366f1)](https://git.io/streak-stats)
-
-</div>
-
 ---
 
 ### 📈 Weekly Development
