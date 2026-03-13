@@ -101,11 +101,6 @@ const developer = {
 
 </div>
 
-### 🔥 Current Streak
-
-<div align="center">
----
-
 ### 📈 Weekly Development
 
 <div align="center">
