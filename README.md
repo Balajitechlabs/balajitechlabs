@@ -178,7 +178,7 @@ const developer = {
 
 If you like my projects and want to support my development:
 
-[![Donate with Razorpay](https://img.shields.io/badge/Donate-Razorpay-blue?style=for-the-badge&logo=razorpay)](https://rzp.io/l/YOUR_PAYMENT_LINK)
+[![Donate with Razorpay](https://img.shields.io/badge/Donate-Razorpay-blue?style=for-the-badge&logo=razorpay)](razorpay.me/@balajitechlabs)
 
 </div>
 
