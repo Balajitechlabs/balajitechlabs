@@ -173,15 +173,19 @@ const developer = {
   <img src="https://img.shields.io/badge/Portfolio-Visit-6366f1?style=for-the-badge&logo=google-chrome&logoColor=white" alt="Portfolio">
 </a>
 ---
-
 ---
 
 ## ☕ Support My Work
 
-If you like my projects and want to support my development:
+If my open-source projects help you, consider supporting development.
 
 [![Donate via Razorpay](https://img.shields.io/badge/Donate-Razorpay-02042B?style=for-the-badge&logo=razorpay&logoColor=white)](https://razorpay.me/@balajitechlabs)
 
+[![Buy Me a Coffee](https://img.shields.io/badge/Buy%20Me%20a%20Coffee-FFDD00?style=for-the-badge&logo=buy-me-a-coffee&logoColor=black)](https://buymeacoffee.com/balajitechlabs)
+
+⭐ Every contribution helps build better open-source tools.
+
+---
 </div>
 
 ---
