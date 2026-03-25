@@ -207,5 +207,5 @@ const developer = {
 </picture>
 
 </div>
-
+<form><script src="https://checkout.razorpay.com/v1/payment-button.js" data-payment_button_id="pl_SVUqt0kdacdgtA" async> </script> </form>
 <!-- markdownlint-enable MD033 MD041 -->
