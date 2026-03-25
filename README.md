@@ -174,11 +174,13 @@ const developer = {
 </a>
 ---
 
+---
+
 ## ☕ Support My Work
 
 If you like my projects and want to support my development:
 
-[![Donate with Razorpay](https://img.shields.io/badge/Donate-Razorpay-blue?style=for-the-badge&logo=razorpay)](razorpay.me/@balajitechlabs)
+[![Donate via Razorpay](https://img.shields.io/badge/Donate-Razorpay-02042B?style=for-the-badge&logo=razorpay&logoColor=white)](https://razorpay.me/@balajitechlabs)
 
 </div>
 
