@@ -172,6 +172,13 @@ const developer = {
 <a href="https://protfolio.balajitechlab.com/">
   <img src="https://img.shields.io/badge/Portfolio-Visit-6366f1?style=for-the-badge&logo=google-chrome&logoColor=white" alt="Portfolio">
 </a>
+---
+
+## ☕ Support My Work
+
+If you like my projects and want to support my development:
+
+[![Donate with Razorpay](https://img.shields.io/badge/Donate-Razorpay-blue?style=for-the-badge&logo=razorpay)](https://rzp.io/l/YOUR_PAYMENT_LINK)
 
 </div>
 
@@ -207,5 +214,4 @@ const developer = {
 </picture>
 
 </div>
-<form><script src="https://checkout.razorpay.com/v1/payment-button.js" data-payment_button_id="pl_SVUqt0kdacdgtA" async> </script> </form>
 <!-- markdownlint-enable MD033 MD041 -->
