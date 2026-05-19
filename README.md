@@ -17,7 +17,7 @@
 <!-- 🌐 QUICK STATS & LINKS 🌐 -->
 <div align="center">
   <a href="mailto:admin@balajitechlab.com"><img src="https://img.shields.io/badge/Email-admin%40balajitechlab.com-00F2FE?style=for-the-badge&logo=gmail&logoColor=white" alt="Email"/></a>
-  <a href="https://tech.balajitechlab.com"><img src="https://img.shields.io/badge/Portfolio-balajitechlab.com-4FACFE?style=for-the-badge&logo=google-chrome&logoColor=white" alt="Portfolio"/></a>
+  <a href="https://portfolio.balajitechlab.com"><img src="https://img.shields.io/badge/Portfolio-balajitechlab.com-4FACFE?style=for-the-badge&logo=google-chrome&logoColor=white" alt="Portfolio"/></a>
   <img src="https://komarev.com/ghpvc/?username=Balajitechlabs&label=Profile%20Views&color=00F2FE&style=for-the-badge" alt="profile views"/>
 </div>
 <br/>
