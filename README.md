@@ -16,7 +16,7 @@
 
 <!-- 🌐 QUICK STATS & LINKS 🌐 -->
 <div align="center">
-  <a href="mailto:admin@balajitechlab.com"><img src="https://img.shields.io/badge/Email-admin%40balajitechlab.com-00F2FE?style=for-the-badge&logo=gmail&logoColor=white" alt="Email"/></a>
+  <a href="mailto:contact@balajitechlab.com"><img src="https://img.shields.io/badge/Email-contact%40balajitechlab.com-00F2FE?style=for-the-badge&logo=gmail&logoColor=white" alt="Email"/></a>
   <a href="https://portfolio.balajitechlab.com"><img src="https://img.shields.io/badge/Portfolio-balajitechlab.com-4FACFE?style=for-the-badge&logo=google-chrome&logoColor=white" alt="Portfolio"/></a>
   <img src="https://komarev.com/ghpvc/?username=Balajitechlabs&label=Profile%20Views&color=00F2FE&style=for-the-badge" alt="profile views"/>
 </div>
@@ -119,11 +119,12 @@ I am a passionate **Full-Stack Developer** and **UI/UX Designer** based in India
 ### 🤝 **Let's Connect & Collaborate**
 
 <p align="center">
-  <a href="http://www.linkedin.com/in/balajideveloper"><img src="https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn"/></a>
-  <a href="https://x.com/thelifeofbalaji"><img src="https://img.shields.io/badge/X-000000?style=for-the-badge&logo=x&logoColor=white" alt="Twitter"/></a>
-  <a href="https://discord.gg/aEFDYEgJ"><img src="https://img.shields.io/badge/Discord-5865F2?style=for-the-badge&logo=discord&logoColor=white" alt="Discord"/></a>
-  <a href="https://telegram.me/balajidev_07/"><img src="https://img.shields.io/badge/Telegram-2CA5E0?style=for-the-badge&logo=telegram&logoColor=white" alt="Telegram"/></a>
-  <a href="https://www.youtube.com/@balajitechlabs-24"><img src="https://img.shields.io/badge/YouTube-FF0000?style=for-the-badge&logo=youtube&logoColor=white" alt="YouTube"/></a>
+  <a href="https://www.linkedin.com/in/balajitechlabs"><img src="https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn"/></a>
+  <a href="https://x.com/balajitechlabs"><img src="https://img.shields.io/badge/X-000000?style=for-the-badge&logo=x&logoColor=white" alt="Twitter"/></a>
+  <a href="https://www.instagram.com/balajitechlabs"><img src="https://img.shields.io/badge/Instagram-E4405F?style=for-the-badge&logo=instagram&logoColor=white" alt="Instagram"/></a>
+  <a href="https://discord.gg/SA4MqnkKQ"><img src="https://img.shields.io/badge/Discord-5865F2?style=for-the-badge&logo=discord&logoColor=white" alt="Discord"/></a>
+  <a href="https://telegram.me/balajitechlabs"><img src="https://img.shields.io/badge/Telegram-2CA5E0?style=for-the-badge&logo=telegram&logoColor=white" alt="Telegram"/></a>
+  <a href="https://www.youtube.com/@balajitechlabs24"><img src="https://img.shields.io/badge/YouTube-FF0000?style=for-the-badge&logo=youtube&logoColor=white" alt="YouTube"/></a>
   <a href="https://dev.to/balajitechlabs_"><img src="https://img.shields.io/badge/DEV-0A0A0A?style=for-the-badge&logo=dev.to&logoColor=white" alt="DEV"/></a>
 </p>
 
