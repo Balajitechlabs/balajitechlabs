@@ -16,7 +16,7 @@
 <!-- ⚡ DYNAMIC TYPING TERMINAL ⚡ -->
 <p align="center">
   <a href="https://balajitechlab.com" target="_blank">
-    <img src="https://i.imghippo.com/files/dnfj2248VPk.gif" width="78%" alt="Dynamic Terminal" />
+    <img src="https://i.imghippo.com/files/Ft2161UYU.gif" width="78%" alt="Dynamic Terminal" />
   </a>
 </p>
 <br/>
