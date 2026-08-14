@@ -57,7 +57,7 @@
     <td align="center" width="50%" valign="top" style="border: none; padding: 10px;">
       <!-- Project 1: QuickDash -->
       <a href="https://quickdash.balajitechlab.com" target="_blank">
-        <img src="https://i.imghippo.com/files/ReGb8056TSs.png" width="100%" alt="QuickDash" />
+        <img src="https://i.imghippo.com/files/ehH4662Jo.png" width="100%" alt="QuickDash" />
       </a>
       <br/><br/>
       <a href="https://play.google.com/store/apps/details?id=com.balajitechlabs.quickdash" target="_blank">
