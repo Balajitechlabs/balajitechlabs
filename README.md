@@ -3,6 +3,9 @@
 <!-- 🚀 CUSTOM ANIMATED BANNER 🚀 -->
 <img src="https://i.imghippo.com/files/uNMN1396JxI.gif" width="100%" alt="Balajitechlabs-Banner" />
 <br/>
+  <a href="https://discord.com/users/1402595333120458782">
+  <img src="https://discord-activity-card.vercel.app/api/status/1402595333120458782" alt="Discord & Music Status" />
+</a>
 <hr>
 <!-- 🖐️ ANIMATED HEADING 🖐️ -->
 <h1 align="center" style="border: none; font-size: 2.6rem; margin-bottom: 6px;">
