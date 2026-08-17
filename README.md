@@ -3,8 +3,8 @@
 <!-- 🚀 CUSTOM ANIMATED BANNER 🚀 -->
 <img src="https://i.imghippo.com/files/uNMN1396JxI.gif" width="100%" alt="Balajitechlabs-Banner" />
 <br/>
-  <a href="https://discord.com/users/1402595333120458782">
-  <img src="https://discord-activity-card.vercel.app/api/status/1402595333120458782" alt="Discord & Music Status" />
+<a href="https://discord.com/users/1402595333120458782">
+  <img src="https://discord-activity-card-balajitechlabs-07.vercel.app/api/status/1402595333120458782" alt="Live Music Status" />
 </a>
 <hr>
 <!-- 🖐️ ANIMATED HEADING 🖐️ -->
