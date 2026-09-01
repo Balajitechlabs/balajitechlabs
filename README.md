@@ -235,25 +235,52 @@
 
 <!-- 🌐 COMMUNITY & SOCIALS 🌐 -->
 <h2 align="center" style="border: none; font-size: 1.8rem; margin-bottom: 15px;">
-  🌐 <b>Community & Socials</b>
+🌐 <b>Community & Socials</b>
 </h2>
 
 <p align="center" style="font-size: 1rem; color: #c9d1d9;">
-  Join my developer channel, follow live updates, and explore creative works! 🚀
+Join the developer community, follow live release updates, and explore open-source tools! 🚀
 </p>
 
+<!-- Primary Ecosystem & Social Badges -->
 <p align="center">
-  <a href="https://whatsapp.com/channel/0029Vb8BTd0FCCoZ9pLw591m" target="_blank"><img src="https://img.shields.io/badge/WhatsApp_Channel-25D366?style=for-the-badge&logo=whatsapp&logoColor=white" alt="WhatsApp Channel"/></a>
-  <a href="https://www.linkedin.com/in/balajitechlabs" target="_blank"><img src="https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn"/></a>
-  <a href="https://x.com/balajitechlabs" target="_blank"><img src="https://img.shields.io/badge/X-000000?style=for-the-badge&logo=x&logoColor=white" alt="X"/></a>
-  <a href="https://www.youtube.com/@balajitechlabs24" target="_blank"><img src="https://img.shields.io/badge/YouTube-FF0000?style=for-the-badge&logo=youtube&logoColor=white" alt="YouTube"/></a>
-  <a href="https://dev.to/balajitechlabs_" target="_blank"><img src="https://img.shields.io/badge/DEV-0A0A0A?style=for-the-badge&logo=dev.to&logoColor=white" alt="DEV"/></a>
+  <a href="https://reddit.com/r/balajitechlabs" target="_blank">
+    <img src="https://img.shields.io/badge/Reddit_Community-FF4500?style=for-the-badge&logo=reddit&logoColor=white" alt="r/balajitechlabs" />
+  </a>
+  <a href="https://play.google.com/store/apps/dev?id=9073716923131512981" target="_blank">
+    <img src="https://img.shields.io/badge/Google_Play-414141?style=for-the-badge&logo=google-play&logoColor=white" alt="Google Play" />
+  </a>
+  <a href="https://linkedin.com/in/balajitechlabs" target="_blank">
+    <img src="https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn" />
+  </a>
+  <a href="https://x.com/balajitechlabs" target="_blank">
+    <img src="https://img.shields.io/badge/X-000000?style=for-the-badge&logo=x&logoColor=white" alt="X" />
+  </a>
+  <a href="https://whatsapp.com/channel/0029Vb8BTd0FCCoZ9pLw591m" target="_blank">
+    <img src="https://img.shields.io/badge/WhatsApp_Channel-25D366?style=for-the-badge&logo=whatsapp&logoColor=white" alt="WhatsApp Channel" />
+  </a>
 </p>
 
+<!-- Developer & Creator Channels -->
 <p align="center">
-  <a href="https://leetcode.com/u/balajitechlabs_/" target="_blank"><img src="https://img.shields.io/badge/LeetCode-FFA116?style=for-the-badge&logo=leetcode&logoColor=black" alt="LeetCode"/></a>
-  <a href="https://www.hackerrank.com/profile/bala_developer07" target="_blank"><img src="https://img.shields.io/badge/HackerRank-00EA64?style=for-the-badge&logo=hackerrank&logoColor=black" alt="HackerRank"/></a>
-  <a href="https://www.behance.net/balajitechlab" target="_blank"><img src="https://img.shields.io/badge/Behance-1769FF?style=for-the-badge&logo=behance&logoColor=white" alt="Behance"/></a>
+  <a href="https://youtube.com/@balajitechlabs" target="_blank">
+    <img src="https://img.shields.io/badge/YouTube-FF0000?style=for-the-badge&logo=youtube&logoColor=white" alt="YouTube" />
+  </a>
+  <a href="https://t.me/balajitechlabs" target="_blank">
+    <img src="https://img.shields.io/badge/Telegram-2CA5E0?style=for-the-badge&logo=telegram&logoColor=white" alt="Telegram" />
+  </a>
+  <a href="https://dev.to/balajitechlabs_" target="_blank">
+    <img src="https://img.shields.io/badge/DEV-0A0A0A?style=for-the-badge&logo=dev.to&logoColor=white" alt="DEV.to" />
+  </a>
+  <a href="https://leetcode.com/u/balajitechlabs_/" target="_blank">
+    <img src="https://img.shields.io/badge/LeetCode-FFA116?style=for-the-badge&logo=leetcode&logoColor=black" alt="LeetCode" />
+  </a>
+  <a href="https://www.hackerrank.com/profile/bala_developer07" target="_blank">
+    <img src="https://img.shields.io/badge/HackerRank-00EA64?style=for-the-badge&logo=hackerrank&logoColor=black" alt="HackerRank" />
+  </a>
+  <a href="https://www.behance.net/balajitechlab" target="_blank">
+    <img src="https://img.shields.io/badge/Behance-1769FF?style=for-the-badge&logo=behance&logoColor=white" alt="Behance" />
+  </a>
 </p>
 
 <br/>
@@ -262,12 +289,25 @@
 
 <!-- ☕ SUPPORT MY OPEN SOURCE JOURNEY ☕ -->
 <h2 align="center" style="border: none; font-size: 1.8rem; margin-bottom: 15px;">
-  ☕ <b>Support My Open Source Journey</b>
+☕ <b>Support My Open Source Journey</b>
 </h2>
-<p align="center">
-  <a href="https://razorpay.me/@balajitechlabs" target="_blank"><img src="https://img.shields.io/badge/Donate-Razorpay-02042B?style=for-the-badge&logo=razorpay&logoColor=white" alt="Razorpay"/></a>
+
+<p align="center" style="font-size: 0.95rem; color: #8b949e; margin-bottom: 15px;">
+If you enjoy my open-source projects, tools, and Android applications, consider supporting my work!
 </p>
+
+<p align="center">
+  <a href="https://razorpay.me/@balajitechlabs" target="_blank">
+    <img src="https://img.shields.io/badge/Donate-Razorpay-02042B?style=for-the-badge&logo=razorpay&logoColor=white" alt="Razorpay" />
+  </a>
+  <a href="https://balajitechlab.com" target="_blank">
+    <img src="https://img.shields.io/badge/Website-balajitechlab.com-000000?style=for-the-badge&logo=googlechrome&logoColor=white" alt="Website" />
+  </a>
+</p>
+
 <br/>
-<hr>
-<hr>
-</div>
+
+<!-- Footer Signature -->
+<p align="center" style="font-size: 0.85rem; color: #6e7681;">
+  &copy; 2026 <b>||BTL||™</b> (balajitechlabs) · Crafted with passion in <b>Bengaluru, Karnataka 🇮🇳</b>
+</p>
