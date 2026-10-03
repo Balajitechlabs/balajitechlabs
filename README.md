@@ -115,12 +115,6 @@
 </p>
 
 <img src="icons/calendar.svg" width="100%" style="display: block; margin-top: 12px;" alt="GitHub Contribution Calendar" />
-
-<picture>
-  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/Balajitechlabs/balajitechlabs/output/github-contribution-grid-snake-dark.svg" />
-  <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/Balajitechlabs/balajitechlabs/output/github-contribution-grid-snake.svg" />
-  <img src="https://raw.githubusercontent.com/Balajitechlabs/balajitechlabs/output/github-contribution-grid-snake-dark.svg" width="100%" style="display: block; margin-top: 14px; border-radius: 12px;" alt="GitHub Contribution Snake Animation" />
-</picture>
 <hr style="border: none; border-top: 1px solid #30363d; margin: 28px 0 20px 0;" />
 <div align="center">
 <a href="https://komarev.com/ghpvc/?username=Balajitechlabs" title="Profile Views"><img src="icons/footer_wave.svg" width="100%" style="display: block;" alt="Balajitechlabs Footer" /></a>
