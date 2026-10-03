@@ -240,3 +240,9 @@ def update_profile_views():
 if __name__ == '__main__':
     generate_calendar()
     update_profile_views()
+    try:
+        import generate_music_card
+        generate_music_card.main()
+    except Exception as e:
+        print(f"Error updating music card: {e}")
+
