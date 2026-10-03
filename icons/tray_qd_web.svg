@@ -1,7 +1,7 @@
 <svg width="153" height="38" viewBox="0 0 153 38" xmlns="http://www.w3.org/2000/svg">
   <style>
     .tray-bg { fill: #ffffff; stroke: #ffffff; stroke-width: 1; }
-    .tray-text { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', monospace; font-size: 11.5px; font-weight: 700; fill: #000000; letter-spacing: 0.3px; }
+    .tray-text { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', monospace; font-size: 11.5px; font-weight: 700; fill: #000000; letter-spacing: 0.4px; }
     .tray-icon { fill: #000000; }
     .tray-stroke { stroke: #000000; }
     .tray-div { stroke: #000000; stroke-width: 1.5; }
@@ -15,10 +15,10 @@
   </style>
   <path d="M 1 0 L 1 26 Q 1 37 12 37 L 153 37 L 153 0 Z" class="tray-bg" />
   <line x1="152.5" y1="0" x2="152.5" y2="38" class="tray-div" />
-  <g transform="translate(41, 11) scale(0.68)">
+  <g transform="translate(52, 11) scale(0.68)">
     <circle cx="10" cy="10" r="9" fill="none" class="tray-stroke" stroke-width="1.8"/>
     <line x1="1" y1="10" x2="19" y2="10" class="tray-stroke" stroke-width="1.8"/>
     <path d="M10 1a13 13 0 0 1 3 9 13 13 0 0 1-3 9 13 13 0 0 1-3-9 13 13 0 0 1 3-9z" fill="none" class="tray-stroke" stroke-width="1.8"/>
   </g>
-  <text x="65" y="23" class="tray-text">Website</text>
+  <text x="73" y="23" class="tray-text">Live</text>
 </svg>

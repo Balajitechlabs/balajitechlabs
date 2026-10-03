@@ -1,0 +1,71 @@
+<svg width="860" height="90" viewBox="0 0 860 90" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="waveGlow" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#ffffff" stop-opacity="0.1" />
+      <stop offset="30%" stop-color="#ffffff" stop-opacity="0.4" />
+      <stop offset="50%" stop-color="#ffffff" stop-opacity="1" />
+      <stop offset="70%" stop-color="#ffffff" stop-opacity="0.4" />
+      <stop offset="100%" stop-color="#ffffff" stop-opacity="0.1" />
+      <animate attributeName="x1" values="-100%;100%" dur="4s" repeatCount="indefinite" />
+      <animate attributeName="x2" values="0%;200%" dur="4s" repeatCount="indefinite" />
+    </linearGradient>
+    <linearGradient id="waveGradDark" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#2a2a2a" stop-opacity="0.6" />
+      <stop offset="100%" stop-color="#000000" stop-opacity="0.95" />
+    </linearGradient>
+    <linearGradient id="waveGradSubtle" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#1a1a1a" stop-opacity="0.5" />
+      <stop offset="100%" stop-color="#000000" stop-opacity="0.9" />
+    </linearGradient>
+  </defs>
+  <style>
+    .wave-bg { fill: transparent; }
+    .wave-deep { fill: url(#waveGradSubtle); }
+    .wave-mid { fill: url(#waveGradDark); }
+    .wave-line-bg { stroke: #333333; stroke-width: 1; fill: none; }
+    .wave-line-pulse { stroke: url(#waveGlow); stroke-width: 2; fill: none; stroke-linecap: round; }
+    .wave-dot { fill: #ffffff; }
+    @media (prefers-color-scheme: light) {
+      .wave-deep { fill: #eeeeee; }
+      .wave-mid { fill: #e0e0e0; }
+      .wave-line-bg { stroke: #cccccc; }
+      .wave-dot { fill: #000000; }
+    }
+  </style>
+
+  <!-- Deep Wave Layer (Slow Oscillating Motion) -->
+  <path class="wave-deep" d="M 0 55 Q 107 35 215 55 T 430 55 T 645 55 T 860 55 L 860 90 L 0 90 Z">
+    <animate attributeName="d" 
+      values="M 0 55 Q 107 35 215 55 T 430 55 T 645 55 T 860 55 L 860 90 L 0 90 Z;
+              M 0 55 Q 107 75 215 55 T 430 55 T 645 55 T 860 55 L 860 90 L 0 90 Z;
+              M 0 55 Q 107 35 215 55 T 430 55 T 645 55 T 860 55 L 860 90 L 0 90 Z" 
+      dur="6s" repeatCount="indefinite" />
+  </path>
+
+  <!-- Mid Wave Layer (Counter Oscillating Motion) -->
+  <path class="wave-mid" d="M 0 45 Q 107 65 215 45 T 430 45 T 645 45 T 860 45 L 860 90 L 0 90 Z">
+    <animate attributeName="d" 
+      values="M 0 45 Q 107 65 215 45 T 430 45 T 645 45 T 860 45 L 860 90 L 0 90 Z;
+              M 0 45 Q 107 25 215 45 T 430 45 T 645 45 T 860 45 L 860 90 L 0 90 Z;
+              M 0 45 Q 107 65 215 45 T 430 45 T 645 45 T 860 45 L 860 90 L 0 90 Z" 
+      dur="4.5s" repeatCount="indefinite" />
+  </path>
+
+  <!-- Crest Wave Line Base -->
+  <path class="wave-line-bg" d="M 0 35 Q 107 10 215 35 T 430 35 T 645 35 T 860 35">
+    <animate attributeName="d" 
+      values="M 0 35 Q 107 10 215 35 T 430 35 T 645 35 T 860 35;
+              M 0 35 Q 107 60 215 35 T 430 35 T 645 35 T 860 35;
+              M 0 35 Q 107 10 215 35 T 430 35 T 645 35 T 860 35" 
+      dur="3.8s" repeatCount="indefinite" />
+  </path>
+
+  <!-- Glowing Crest Wave Pulse -->
+  <path class="wave-line-pulse" d="M 0 35 Q 107 10 215 35 T 430 35 T 645 35 T 860 35">
+    <animate attributeName="d" 
+      values="M 0 35 Q 107 10 215 35 T 430 35 T 645 35 T 860 35;
+              M 0 35 Q 107 60 215 35 T 430 35 T 645 35 T 860 35;
+              M 0 35 Q 107 10 215 35 T 430 35 T 645 35 T 860 35" 
+      dur="3.8s" repeatCount="indefinite" />
+  </path>
+</svg>

@@ -1,14 +1,5 @@
 <svg width="440" height="80" viewBox="0 0 440 80" xmlns="http://www.w3.org/2000/svg">
   <defs>
-    <linearGradient id="chromeShimmer" x1="-100%" y1="0%" x2="200%" y2="0%">
-      <stop offset="0%" stop-color="#777777" />
-      <stop offset="35%" stop-color="#ffffff" />
-      <stop offset="50%" stop-color="#ffffff" />
-      <stop offset="65%" stop-color="#777777" />
-      <stop offset="100%" stop-color="#444444" />
-      <animate attributeName="x1" values="-100%;150%" dur="3.5s" repeatCount="indefinite" />
-      <animate attributeName="x2" values="0%;250%" dur="3.5s" repeatCount="indefinite" />
-    </linearGradient>
     <linearGradient id="whiteLinePulse" x1="-100%" y1="0%" x2="100%" y2="0%">
       <stop offset="0%" stop-color="#30363d" />
       <stop offset="50%" stop-color="#ffffff" stop-opacity="0.9" />
@@ -23,7 +14,7 @@
       font-size: 38px;
       font-weight: 800;
       letter-spacing: -0.5px;
-      fill: url(#chromeShimmer);
+      fill: #ffffff;
     }
     .badge {
       font-family: 'SF Mono', 'Fira Code', 'Courier New', monospace;
@@ -34,7 +25,7 @@
     }
     @media (prefers-color-scheme: light) {
       .badge { fill: #57606a; }
-      .title { fill: #181717; }
+      .title { fill: #000000; }
     }
   </style>
   <text x="0" y="34" class="title">balajitechlabs- :)</text>
