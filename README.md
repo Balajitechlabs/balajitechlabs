@@ -114,10 +114,5 @@
 <img src="icons/calendar.svg" width="100%" style="display: block; margin-top: 12px;" alt="GitHub Contribution Calendar" />
 <hr style="border: none; border-top: 1px solid #30363d; margin: 28px 0 20px 0;" />
 <div align="center">
-<a href="https://komarev.com/ghpvc/?username=Balajitechlabs"><img src="icons/profile_views.svg" height="28" width="140" alt="Profile Views" /></a>
-<br/><br/>
-<p align="center" style="font-size: 0.85rem; color: #888888; margin: 0 0 16px 0;">
-&copy; 2026 <b>||BTL||&trade;</b> &middot; Designed with Pure ❤️
-</p>
-<img src="icons/wave.svg" width="100%" style="display: block; margin-top: 16px;" alt="Wave" />
+<a href="https://komarev.com/ghpvc/?username=Balajitechlabs" title="Profile Views"><img src="icons/wave.svg" width="100%" style="display: block;" alt="Balajitechlabs Footer" /></a>
 </div>
