@@ -61,7 +61,8 @@
 </table>
 </td>
 <td width="35%" align="center" valign="top" style="border: none; padding-left: 14px;">
-<img src="banner.gif" width="210px" style="border-radius: 16px; box-shadow: 0 4px 20px rgba(0,0,0,0.4); display: block;" alt="balajitechlabs" />
+<img src="banner.gif" width="210px" style="border-radius: 16px; box-shadow: 0 4px 20px rgba(0,0,0,0.4); display: block; margin-bottom: 12px;" alt="balajitechlabs" />
+<a href="https://discord.com/users/1402595333120458782" title="Discord Live Presence &amp; Music"><img src="https://lanyard.cnrad.dev/api/1402595333120458782?theme=dark&amp;bg=000000&amp;borderRadius=14px&amp;idleMessage=Building%20at%20balajitechlabs" width="210px" style="border-radius: 14px; display: block; border: 1px solid #2a2a2a;" alt="Discord Presence &amp; Music" /></a>
 </td>
 </tr>
 </table>
