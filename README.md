@@ -62,7 +62,8 @@
 </td>
 <td width="35%" align="center" valign="top" style="border: none; padding-left: 14px;">
 <img src="banner.gif" width="210px" style="border-radius: 16px; box-shadow: 0 4px 20px rgba(0,0,0,0.4); display: block; margin-bottom: 12px;" alt="balajitechlabs" />
-<a href="https://discord.com/users/1402595333120458782" title="Discord &amp; Music Status"><img src="https://discord-activity-card.vercel.app/api/status/1402595333120458782?bg=000000&amp;border=2a2a2a&amp;bar_bg=222222&amp;bar_fg=ffffff" width="100%" style="border-radius: 14px; display: block; border: 1px solid #2a2a2a;" alt="Discord &amp; Music Status" /></a>
+<a href="https://discord.com/users/1402595333120458782" title="Discord &amp; Live Music"><img src="https://discord-activity-card.vercel.app/api/status/1402595333120458782?bg=000000&amp;border=2a2a2a&amp;bar_bg=222222&amp;bar_fg=ffffff" width="100%" style="border-radius: 14px; display: block; border: 1px solid #2a2a2a; margin-bottom: 10px;" alt="Discord &amp; Live Music" /></a>
+<a href="https://www.last.fm/user/balajitechlabs" title="Recent Scrobbles on Last.fm"><img src="https://lastfm-recently-played.jeffreyca.workers.dev/svg?user=balajitechlabs&amp;count=3&amp;bg_color=000000&amp;text_color=ffffff&amp;artist_color=888888&amp;accent_color=ffffff&amp;radius=14" width="100%" style="border-radius: 14px; display: block; border: 1px solid #2a2a2a;" alt="Recent Scrobbles on Last.fm" /></a>
 </td>
 </tr>
 </table>
