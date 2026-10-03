@@ -1,313 +1,123 @@
 <!-- markdownlint-disable MD033 MD041 -->
-<div align="center">
-<!-- 🚀 CUSTOM ANIMATED BANNER 🚀 -->
-<img src="https://i.imghippo.com/files/uNMN1396JxI.gif" width="100%" alt="Balajitechlabs-Banner" />
-<br/>
-<a href="https://discord.com/users/1402595333120458782">
-  <img src="https://discord-activity-card-balajitechlabs-07.vercel.app/api/status/1402595333120458782" alt="Live Music Status" />
-</a>
-<hr>
-<!-- 🖐️ ANIMATED HEADING 🖐️ -->
-<h1 align="center" style="border: none; font-size: 2.6rem; margin-bottom: 6px;">
-  Hi <img src="https://user-images.githubusercontent.com/1303154/88677602-1635ba80-d120-11ea-84d8-d263ba5fc3c0.gif" width="34px" />, I'm <b>Balaji S</b>
-</h1>
-<!-- 👨‍💻 ABOUT ME 👨‍💻 -->
-<h2 align="center" style="border: none; font-size: 1.8rem; margin-top: 15px; margin-bottom: 10px;">
-  👨‍💻 <b>About Me</b>
-</h2>
-
-<!-- ⚡ DYNAMIC TYPING TERMINAL ⚡ -->
-<p align="center">
-  <a href="https://balajitechlab.com" target="_blank">
-    <img src="https://i.imghippo.com/files/Ft2161UYU.gif" width="78%" alt="Dynamic Terminal" />
-  </a>
-</p>
-<br/>
- <img src="https://komarev.com/ghpvc/?username=Balajitechlabs&label=Profile%20Views&color=000000&style=for-the-badge&labelColor=000000" alt="profile views"/>
-<hr>
-<h2 align="center" style="border: none; font-size: 1.8rem; margin-bottom: 15px;">
-  🤝 <b>Let's Connect</b>
-</h2>
-<!-- 🌐 QUICK CONTACT & CONNECT 🌐 -->
-<div align="center">
-  <a href="https://mail.google.com/mail/?view=cm&fs=1&to=admin@balajitechlab.com" target="_blank">
-    <img src="https://i.imghippo.com/files/jzBm7844oLc.png" height="42px" alt="Email admin@balajitechlab.com"/>
-  </a>
-  &nbsp;&nbsp;
-  <a href="https://t.me/balajitechlabs" target="_blank">
-    <img src="https://i.imghippo.com/files/LB6121XK.png" height="42px" alt="Telegram @balajitechlabs"/>
-  </a>
-  &nbsp;&nbsp;
-  <a href="https://discord.com/users/1402595333120458782" target="_blank">
-    <img src="https://i.imghippo.com/files/pETK7196ms.png" height="42px" alt="Discord @balajitechlabs"/>
-  </a>
-  &nbsp;&nbsp;
-  <a href="https://instagram.com/balajitechlabs" target="_blank">
-    <img src="https://i.imghippo.com/files/gHJH3240ik.png" height="42px" alt="Instagram @balajitechlabs"/>
-  </a>
-</div>
-<br/>
-<hr>
-<hr>
-<!-- 📱 APPS & PROJECTS SHOWCASE (2x2 CUSTOM FIGMA BADGES GRID) 📱 -->
-<h2 align="center" style="border: none; font-size: 1.8rem; margin-bottom: 15px;">
-  📱 <b>Featured Apps & Projects</b>
-</h2>
-
-<!-- 📱 FEATURED APPS & PROJECTS (SIDE-BY-SIDE 1-ROW SHOWCASE) 📱 -->
-<table align="center" width="100%" style="border: none; background: transparent;">
-  <tr style="border: none; background: transparent;">
-    <td align="center" width="50%" valign="top" style="border: none; padding: 10px;">
-      <!-- Project 1: QuickDash -->
-      <a href="https://quickdash.balajitechlab.com" target="_blank">
-        <img src="https://i.imghippo.com/files/ehH4662Jo.png" width="100%" alt="QuickDash" />
-      </a>
-      <br/><br/>
-      <a href="https://play.google.com/store/apps/details?id=com.balajitechlabs.quickdash" target="_blank">
-        <img src="https://i.imghippo.com/files/HWd3070AGs.png" height="38px" alt="Get it on Google Play" />
-      </a>
-      &nbsp;&nbsp;
-      <a href="https://github.com/Balajitechlabs/quickdash" target="_blank">
-        <img src="https://i.imghippo.com/files/Hl6852EBQ.png" height="38px" alt="View on GitHub" />
-      </a>
-    </td>
-    <td align="center" width="50%" valign="top" style="border: none; padding: 10px;">
-      <!-- Project 2: Official Portfolio -->
-      <a href="https://balajitechlab.com" target="_blank">
-        <img src="https://i.imghippo.com/files/AAD5756bY.png" width="100%" alt="Official Portfolio" />
-      </a>
-      <br/><br/>
-      <a href="https://github.com/balajitechlabs/portfolio" target="_blank">
-        <img src="https://i.imghippo.com/files/Nda7661dBs.png" height="38px" alt="View on GitHub" />
-      </a>
-      &nbsp;&nbsp;
-      <a href="https://balajitechlab.com" target="_blank">
-        <img src="https://i.imghippo.com/files/CGc1474WY.png" height="38px" alt="Visit Website" />
-      </a>
-    </td>
-  </tr>
+<table border="0" style="border: none; width: 100%; border-collapse: collapse;">
+<tr style="border: none; background: transparent;">
+<td width="35%" align="center" valign="top" style="border: none; padding-right: 28px;">
+<img src="banner.gif" width="220px" style="border-radius: 16px; box-shadow: 0 4px 16px rgba(0,0,0,0.3); display: block;" alt="balajitechlabs" />
+</td>
+<td width="65%" valign="top" style="border: none;">
+<img src="icons/capsule.svg" width="100%" style="max-width: 440px; margin-bottom: 14px; display: block;" alt="balajitechlabs" />
+<img src="icons/title_connect.svg" height="20px" style="margin-bottom: 8px; display: block;" alt="Connect With Me" />
+<table border="1" cellpadding="6" style="border-collapse: collapse; margin-bottom: 14px;">
+<tr>
+<td align="center" width="42"><a href="https://balajitechlab.com" title="Official Website (balajitechlab.com)"><img src="icons/website.svg" width="24" height="24" alt="Website" /></a></td>
+<td align="center" width="42"><a href="https://instagram.com/balajitechlabs" title="Instagram"><img src="icons/instagram.svg" width="24" height="24" alt="Instagram" /></a></td>
+<td align="center" width="42"><a href="https://x.com/balajitechlabs" title="X (Twitter)"><img src="icons/x.svg" width="24" height="24" alt="X" /></a></td>
+<td align="center" width="42"><a href="https://youtube.com/@balajitechlabs-org" title="YouTube (@balajitechlabs-org)"><img src="icons/youtube.svg" width="24" height="24" alt="YouTube" /></a></td>
+<td align="center" width="42"><a href="https://discord.com/users/1402595333120458782" title="Discord"><img src="icons/discord.svg" width="24" height="24" alt="Discord" /></a></td>
+<td align="center" width="42"><a href="https://t.me/balajitechlabs" title="Telegram"><img src="icons/telegram.svg" width="24" height="24" alt="Telegram" /></a></td>
+<td align="center" width="42"><a href="https://linkedin.com/in/balajitechlabs" title="LinkedIn"><img src="icons/linkedin.svg" width="24" height="24" alt="LinkedIn" /></a></td>
+<td align="center" width="42"><a href="https://www.reddit.com/user/balaji_developer" title="Reddit (u/balaji_developer)"><img src="icons/reddit.svg" width="24" height="24" alt="Reddit" /></a></td>
+<td align="center" width="42"><a href="mailto:balajitechlabs.github@gmail.com" title="Mail"><img src="icons/gmail.svg" width="24" height="24" alt="Email" /></a></td>
+</tr>
 </table>
-
-<br/>
-
-<!-- 🐙 MORE PROJECTS SHOWCASE 🐙 -->
+<img src="icons/title_communities.svg" height="20px" style="margin-bottom: 8px; display: block;" alt="Communities" />
+<table border="1" cellpadding="6" style="border-collapse: collapse; margin-bottom: 16px;">
+<tr>
+<td align="center" width="42"><a href="https://t.me/btldotdev/" title="Telegram Community (@btldotdev)"><img src="icons/telegram.svg" width="24" height="24" alt="Telegram Community" /></a></td>
+<td align="center" width="42"><a href="https://www.reddit.com/r/balajitechlabs/" title="Reddit Community (r/balajitechlabs)"><img src="icons/reddit.svg" width="24" height="24" alt="Reddit Community" /></a></td>
+</tr>
+</table>
+<img src="icons/title_donate.svg" height="20px" style="margin-bottom: 8px; display: block;" alt="Support &amp; Sponsor" />
+<table border="1" cellpadding="6" style="border-collapse: collapse; margin-bottom: 16px;">
+<tr>
+<td align="center" width="42"><a href="https://rzp.io/rzp/btl-donation" title="Donate via Razorpay"><img src="icons/razorpay.svg" width="24" height="24" alt="Razorpay" /></a></td>
+<td align="center" width="42"><a href="https://github.com/sponsors/balajitechlabs" title="GitHub Sponsors"><img src="icons/githubsponsors.svg" width="24" height="24" alt="GitHub Sponsors" /></a></td>
+</tr>
+</table>
+<hr style="border: none; border-top: 1px solid #30363d; margin: 16px 0;" />
+<img src="icons/title_stack.svg" height="20px" style="margin-bottom: 8px; display: block;" alt="Core Tech Stack &amp; Startup Arsenal" />
+<table border="1" cellpadding="6" style="border-collapse: collapse;">
+<tr>
+<td align="center" width="42"><a href="https://developer.android.com" title="Android"><img src="icons/android.svg" width="24" height="24" alt="Android" /></a></td>
+<td align="center" width="42"><a href="https://kotlinlang.org" title="Kotlin"><img src="icons/kotlin.svg" width="24" height="24" alt="Kotlin" /></a></td>
+<td align="center" width="42"><a href="https://developer.android.com/jetpack/compose" title="Jetpack Compose"><img src="icons/compose.svg" width="24" height="24" alt="Jetpack Compose" /></a></td>
+<td align="center" width="42"><a href="https://m3.material.io" title="Material Design 3"><img src="icons/materialdesign.svg" width="24" height="24" alt="Material Design" /></a></td>
+<td align="center" width="42"><a href="https://gradle.org" title="Gradle"><img src="icons/gradle.svg" width="24" height="24" alt="Gradle" /></a></td>
+<td align="center" width="42"><a href="https://git-scm.com" title="Git"><img src="icons/git.svg" width="24" height="24" alt="Git" /></a></td>
+</tr>
+<tr>
+<td align="center" width="42"><a href="https://www.typescriptlang.org" title="TypeScript"><img src="icons/typescript.svg" width="24" height="24" alt="TypeScript" /></a></td>
+<td align="center" width="42"><a href="https://react.dev" title="React"><img src="icons/react.svg" width="24" height="24" alt="React" /></a></td>
+<td align="center" width="42"><a href="https://nodejs.org" title="Node.js"><img src="icons/node.svg" width="24" height="24" alt="Node.js" /></a></td>
+<td align="center" width="42"><a href="https://www.python.org" title="Python"><img src="icons/python.svg" width="24" height="24" alt="Python" /></a></td>
+<td align="center" width="42"><a href="https://firebase.google.com" title="Firebase"><img src="icons/firebase.svg" width="24" height="24" alt="Firebase" /></a></td>
+<td align="center" width="42"><a href="https://www.docker.com" title="Docker"><img src="icons/docker.svg" width="24" height="24" alt="Docker" /></a></td>
+</tr>
+<tr>
+<td align="center" width="42"><a href="https://www.linux.org" title="Linux"><img src="icons/linux.svg" width="24" height="24" alt="Linux" /></a></td>
+<td align="center" width="42"><a href="https://ohmyz.sh" title="Oh My Zsh"><img src="icons/ohmyzsh.svg" width="24" height="24" alt="Oh My Zsh" /></a></td>
+<td align="center" width="42"><a href="https://www.figma.com" title="Figma"><img src="icons/figma.svg" width="24" height="24" alt="Figma" /></a></td>
+<td align="center" width="42"><a href="https://tailwindcss.com" title="Tailwind CSS"><img src="icons/tailwindcss.svg" width="24" height="24" alt="Tailwind CSS" /></a></td>
+<td align="center" width="42"><a href="https://nextjs.org" title="Next.js"><img src="icons/nextdotjs.svg" width="24" height="24" alt="Next.js" /></a></td>
+<td align="center" width="42"><a href="https://www.postgresql.org" title="PostgreSQL"><img src="icons/postgresql.svg" width="24" height="24" alt="PostgreSQL" /></a></td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+<hr style="border: none; border-top: 1px solid #30363d; margin: 24px 0;" />
+<img src="icons/title_projects.svg" height="22px" style="margin-bottom: 12px; display: block;" alt="Featured Projects" />
+<table border="0" style="border: none; width: 100%; border-collapse: collapse;">
+<tr style="border: none; background: transparent;">
+<td width="50%" valign="top" style="border: none; padding-right: 6px;">
+<a href="https://github.com/Balajitechlabs/quickdash"><img src="icons/card_quickdash_top.svg" width="100%" style="display: block; margin: 0; padding: 0;" alt="quickdash" /></a>
+<table border="0" cellpadding="0" cellspacing="0" style="width: 100%; border-collapse: collapse; margin: 0; padding: 0;">
+<tr>
+<td width="33.3%" align="center" style="border: none; padding: 0; margin: 0;">
+<a href="https://quickdash.balajitechlab.com" title="Live Website"><img src="icons/tray_qd_web.svg" width="100%" style="display: block;" alt="Website" /></a>
+</td>
+<td width="33.4%" align="center" style="border: none; padding: 0; margin: 0;">
+<a href="https://play.google.com/store/apps/details?id=com.balajitechlabs.quickdash" title="Google Play Store"><img src="icons/tray_qd_play.svg" width="100%" style="display: block;" alt="Play Store" /></a>
+</td>
+<td width="33.3%" align="center" style="border: none; padding: 0; margin: 0;">
+<a href="https://github.com/Balajitechlabs/quickdash" title="GitHub Repository"><img src="icons/tray_qd_gh.svg" width="100%" style="display: block;" alt="GitHub" /></a>
+</td>
+</tr>
+</table>
+</td>
+<td width="50%" valign="top" style="border: none; padding-left: 6px;">
+<a href="https://github.com/Balajitechlabs/balajitechlab.com"><img src="icons/card_btl_top.svg" width="100%" style="display: block; margin: 0; padding: 0;" alt="balajitechlab.com" /></a>
+<table border="0" cellpadding="0" cellspacing="0" style="width: 100%; border-collapse: collapse; margin: 0; padding: 0;">
+<tr>
+<td width="50%" align="center" style="border: none; padding: 0; margin: 0;">
+<a href="https://balajitechlab.com" title="Live Website"><img src="icons/tray_btl_web.svg" width="100%" style="display: block;" alt="Website" /></a>
+</td>
+<td width="50%" align="center" style="border: none; padding: 0; margin: 0;">
+<a href="https://github.com/Balajitechlabs/balajitechlab.com" title="GitHub Repository"><img src="icons/tray_btl_gh.svg" width="100%" style="display: block;" alt="GitHub" /></a>
+</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+<hr style="border: none; border-top: 1px solid #30363d; margin: 24px 0;" />
+<img src="icons/title_activity.svg" height="22px" style="margin-bottom: 12px; display: block;" alt="GitHub Activity &amp; Metrics" />
+<table border="0" style="border: none; width: 100%; border-collapse: collapse; margin-bottom: 12px;">
+<tr style="border: none; background: transparent;">
+<td width="50%" valign="top" style="border: none; padding-right: 6px;">
+<img src="https://streak-stats.demolab.com/?user=Balajitechlabs&amp;theme=dark&amp;background=000000&amp;border=2A2A2A&amp;stroke=2A2A2A&amp;ring=FFFFFF&amp;fire=FFFFFF&amp;currStreakLabel=FFFFFF&amp;currStreakNum=FFFFFF&amp;sideNums=FFFFFF&amp;sideLabels=A0A0A0&amp;dates=888888" width="100%" style="display: block; border-radius: 12px;" alt="GitHub Streak Stats" />
+</td>
+<td width="50%" valign="top" style="border: none; padding-left: 6px;">
+<img src="https://github-readme-stats.vercel.app/api?username=Balajitechlabs&amp;show_icons=true&amp;bg_color=000000&amp;title_color=FFFFFF&amp;text_color=A0A0A0&amp;icon_color=FFFFFF&amp;border_color=2A2A2A" width="100%" style="display: block; border-radius: 12px;" alt="GitHub Profile Stats" />
+</td>
+</tr>
+</table>
+<img src="icons/calendar.svg" width="100%" style="display: block; margin-top: 12px;" alt="GitHub Contribution Calendar" />
+<hr style="border: none; border-top: 1px solid #30363d; margin: 28px 0 20px 0;" />
 <div align="center">
-  <a href="https://github.com/Balajitechlabs?tab=repositories" target="_blank">
-    <img src="https://i.imghippo.com/files/Eqx6802Ko.png" width="48%" alt="Explore More Projects" />
-  </a>
-  <br/><br/>
-  <a href="https://play.google.com/store/apps/dev?id=9073716923131512981" target="_blank">
-    <img src="https://i.imghippo.com/files/HWd3070AGs.png" height="38px" alt="Google Play Developer Profile" />
-  </a>
-  &nbsp;&nbsp;
-  <a href="https://github.com/Balajitechlabs?tab=repositories" target="_blank">
-    <img src="https://i.imghippo.com/files/Nda7661dBs.png" height="38px" alt="View All Repositories on GitHub" />
-  </a>
+<a href="https://komarev.com/ghpvc/?username=Balajitechlabs"><img src="icons/profile_views.svg" height="28px" alt="Profile Views" /></a>
+<br/><br/>
+<p align="center" style="font-size: 0.85rem; color: #888888; margin: 0;">
+&copy; 2026 <b>||BTL||&trade;</b> (Balaji S) &middot; Designed with Pure Monochrome Engineering
+</p>
 </div>
-<br/>
-<hr>
-<hr>
-
-<!-- 📊 GITHUB ANALYTICS & METRICS 📊 -->
-<h2 align="center" style="border: none; font-size: 1.8rem; margin-bottom: 15px;">
-  📊 <b>GitHub Analytics &amp; Metrics</b>
-</h2>
-
-<!-- Row 1: Profile Details & Most Committed Languages -->
-<p align="center">
-  <img src="https://github-profile-summary-cards.vercel.app/api/cards/profile-details?username=Balajitechlabs&theme=tokyonight" width="48%" alt="Profile Details" />
-  &nbsp;
-  <img src="https://github-profile-summary-cards.vercel.app/api/cards/most-commit-language?username=Balajitechlabs&theme=tokyonight" width="23%" alt="Most Committed Languages" />
-  &nbsp;
-  <img src="https://github-profile-summary-cards.vercel.app/api/cards/repos-per-language?username=Balajitechlabs&theme=tokyonight" width="23%" alt="Repos by Language" />
-</p>
-
-<!-- Row 2: Stats & Productive Time -->
-<p align="center">
-  <img src="https://github-profile-summary-cards.vercel.app/api/cards/stats?username=Balajitechlabs&theme=tokyonight" width="35%" alt="GitHub Stats" />
-  &nbsp;
-  <img src="https://github-profile-summary-cards.vercel.app/api/cards/productive-time?username=Balajitechlabs&theme=tokyonight&utcOffset=5.5" width="35%" alt="Productive Time" />
-</p>
-
-<br/>
-
-<!-- Row 3: Compact Dynamic Streak Counter -->
-<div align="center">
-  <a href="https://github.com/Balajitechlabs" target="_blank">
-    <img width="65%" src="https://streak-stats.demolab.com/?user=Balajitechlabs&background=0D1117&border=30363D&stroke=30363D&ring=00F2FE&fire=00F2FE&currStreakNum=00F2FE&sideNums=F0F6FC&currStreakLabel=00F2FE&sideLabels=8B949E&dates=8B949E&border_radius=12" alt="GitHub Streak Stats" />
-  </a>
-</div>
-
-<br/>
-
-<!-- 📈 CONTRIBUTION ACTIVITY GRAPH 📈 -->
-<h2 align="center" style="border: none; font-size: 1.8rem; margin-bottom: 15px;">
-  📈 <b>Contribution Activity Graph</b>
-</h2>
-
-<p align="center">
-  <a href="https://github.com/Balajitechlabs" target="_blank">
-    <img width="85%" alt="GitHub Activity Graph" src="https://github-readme-activity-graph.vercel.app/graph?username=Balajitechlabs&bg_color=0D1117&color=00F2FE&line=00F2FE&point=FFFFFF&area=true&hide_border=false&border_color=30363D&area_color=00F2FE15" />
-  </a>
-</p>
-
-<br/>
-
----
-
-<!-- 🛠️ TECH ARSENAL 🛠️ -->
-<h2 align="center" style="border: none; font-size: 1.8rem; margin-bottom: 15px;">
-  🛠️ <b>Tech Arsenal</b>
-</h2>
-
-<p align="center" style="font-size: 1.05rem; font-weight: 600; color: #00F2FE; margin-bottom: 10px;">
-  📱 <b>Mobile & Android Engineering</b>
-</p>
-<p align="center">
-  <img src="https://img.shields.io/badge/Android-3DDC84?style=for-the-badge&logo=android&logoColor=white" alt="Android" />
-  <img src="https://img.shields.io/badge/Android_Studio-3DDC84?style=for-the-badge&logo=android-studio&logoColor=white" alt="Android Studio" />
-  <img src="https://img.shields.io/badge/Kotlin-7F52FF?style=for-the-badge&logo=kotlin&logoColor=white" alt="Kotlin" />
-  <img src="https://img.shields.io/badge/Java-ED8B00?style=for-the-badge&logo=openjdk&logoColor=white" alt="Java" />
-  <img src="https://img.shields.io/badge/Flutter-02569B?style=for-the-badge&logo=flutter&logoColor=white" alt="Flutter" />
-  <img src="https://img.shields.io/badge/Dart-0175C2?style=for-the-badge&logo=dart&logoColor=white" alt="Dart" />
-  <img src="https://img.shields.io/badge/React_Native-20232A?style=for-the-badge&logo=react&logoColor=61DAFB" alt="React Native" />
-  <img src="https://img.shields.io/badge/Firebase-FFCA28?style=for-the-badge&logo=firebase&logoColor=black" alt="Firebase" />
-  <img src="https://img.shields.io/badge/SQLite-07405E?style=for-the-badge&logo=sqlite&logoColor=white" alt="SQLite" />
-</p>
-
-<br/>
-
-<p align="center" style="font-size: 1.05rem; font-weight: 600; color: #00F2FE; margin-bottom: 10px;">
-  🌐 <b>Frontend & Web Ecosystem</b>
-</p>
-<p align="center">
-  <img src="https://img.shields.io/badge/TypeScript-3178C6?style=for-the-badge&logo=typescript&logoColor=white" alt="TypeScript" />
-  <img src="https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black" alt="JavaScript" />
-  <img src="https://img.shields.io/badge/React.js-20232A?style=for-the-badge&logo=react&logoColor=61DAFB" alt="React" />
-  <img src="https://img.shields.io/badge/Next.js-000000?style=for-the-badge&logo=next.js&logoColor=white" alt="Next.js" />
-  <img src="https://img.shields.io/badge/Vue.js-35495E?style=for-the-badge&logo=vuedotjs&logoColor=4FC08D" alt="Vue.js" />
-  <img src="https://img.shields.io/badge/Tailwind_CSS-38B2AC?style=for-the-badge&logo=tailwind-css&logoColor=white" alt="Tailwind CSS" />
-  <img src="https://img.shields.io/badge/Three.js-000000?style=for-the-badge&logo=three.js&logoColor=white" alt="Three.js" />
-  <img src="https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white" alt="HTML5" />
-  <img src="https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white" alt="CSS3" />
-</p>
-
-<br/>
-
-<p align="center" style="font-size: 1.05rem; font-weight: 600; color: #00F2FE; margin-bottom: 10px;">
-  ⚙️ <b>Backend, Cloud & Databases</b>
-</p>
-<p align="center">
-  <img src="https://img.shields.io/badge/Node.js-339933?style=for-the-badge&logo=nodedotjs&logoColor=white" alt="Node.js" />
-  <img src="https://img.shields.io/badge/Express.js-000000?style=for-the-badge&logo=express&logoColor=white" alt="Express.js" />
-  <img src="https://img.shields.io/badge/NestJS-E0234E?style=for-the-badge&logo=nestjs&logoColor=white" alt="NestJS" />
-  <img src="https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white" alt="Python" />
-  <img src="https://img.shields.io/badge/FastAPI-009688?style=for-the-badge&logo=fastapi&logoColor=white" alt="FastAPI" />
-  <img src="https://img.shields.io/badge/GraphQL-E10098?style=for-the-badge&logo=graphql&logoColor=white" alt="GraphQL" />
-  <img src="https://img.shields.io/badge/PostgreSQL-316192?style=for-the-badge&logo=postgresql&logoColor=white" alt="PostgreSQL" />
-  <img src="https://img.shields.io/badge/MongoDB-4EA94B?style=for-the-badge&logo=mongodb&logoColor=white" alt="MongoDB" />
-  <img src="https://img.shields.io/badge/Redis-DC382D?style=for-the-badge&logo=redis&logoColor=white" alt="Redis" />
-  <img src="https://img.shields.io/badge/Docker-2496ED?style=for-the-badge&logo=docker&logoColor=white" alt="Docker" />
-  <img src="https://img.shields.io/badge/Supabase-3ECF8E?style=for-the-badge&logo=supabase&logoColor=white" alt="Supabase" />
-  <img src="https://img.shields.io/badge/Google_Cloud-4285F4?style=for-the-badge&logo=google-cloud&logoColor=white" alt="Google Cloud" />
-</p>
-
-<br/>
-
-<p align="center" style="font-size: 1.05rem; font-weight: 600; color: #00F2FE; margin-bottom: 10px;">
-  🔧 <b>DevOps, Architecture & Tools</b>
-</p>
-<p align="center">
-  <img src="https://img.shields.io/badge/Git-F05032?style=for-the-badge&logo=git&logoColor=white" alt="Git" />
-  <img src="https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white" alt="GitHub" />
-  <img src="https://img.shields.io/badge/GitHub_Actions-2088FF?style=for-the-badge&logo=github-actions&logoColor=white" alt="GitHub Actions" />
-  <img src="https://img.shields.io/badge/Linux-FCC624?style=for-the-badge&logo=linux&logoColor=black" alt="Linux" />
-  <img src="https://img.shields.io/badge/Postman-FF6C37?style=for-the-badge&logo=postman&logoColor=white" alt="Postman" />
-  <img src="https://img.shields.io/badge/VS_Code-007ACC?style=for-the-badge&logo=visual-studio-code&logoColor=white" alt="VS Code" />
-  <img src="https://img.shields.io/badge/Figma-F24E1E?style=for-the-badge&logo=figma&logoColor=white" alt="Figma" />
-  <img src="https://img.shields.io/badge/Vite-646CFF?style=for-the-badge&logo=vite&logoColor=white" alt="Vite" />
-  <img src="https://img.shields.io/badge/Vercel-000000?style=for-the-badge&logo=vercel&logoColor=white" alt="Vercel" />
-</p>
-
-<br/>
-
----
-
-<!-- 🌐 COMMUNITY & SOCIALS 🌐 -->
-<h2 align="center" style="border: none; font-size: 1.8rem; margin-bottom: 15px;">
-🌐 <b>Community & Socials</b>
-</h2>
-
-<p align="center" style="font-size: 1rem; color: #c9d1d9;">
-Join the developer community, follow live release updates, and explore open-source tools! 🚀
-</p>
-
-<!-- Primary Ecosystem & Social Badges -->
-<p align="center">
-  <a href="https://reddit.com/r/balajitechlabs" target="_blank">
-    <img src="https://img.shields.io/badge/Reddit_Community-FF4500?style=for-the-badge&logo=reddit&logoColor=white" alt="r/balajitechlabs" />
-  </a>
-  <a href="https://play.google.com/store/apps/dev?id=9073716923131512981" target="_blank">
-    <img src="https://img.shields.io/badge/Google_Play-414141?style=for-the-badge&logo=google-play&logoColor=white" alt="Google Play" />
-  </a>
-  <a href="https://linkedin.com/in/balajitechlabs" target="_blank">
-    <img src="https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn" />
-  </a>
-  <a href="https://x.com/balajitechlabs" target="_blank">
-    <img src="https://img.shields.io/badge/X-000000?style=for-the-badge&logo=x&logoColor=white" alt="X" />
-  </a>
-  <a href="https://whatsapp.com/channel/0029Vb8BTd0FCCoZ9pLw591m" target="_blank">
-    <img src="https://img.shields.io/badge/WhatsApp_Channel-25D366?style=for-the-badge&logo=whatsapp&logoColor=white" alt="WhatsApp Channel" />
-  </a>
-</p>
-
-<!-- Developer & Creator Channels -->
-<p align="center">
-  <a href="https://youtube.com/@balajitechlabs" target="_blank">
-    <img src="https://img.shields.io/badge/YouTube-FF0000?style=for-the-badge&logo=youtube&logoColor=white" alt="YouTube" />
-  </a>
-  <a href="https://t.me/balajitechlabs" target="_blank">
-    <img src="https://img.shields.io/badge/Telegram-2CA5E0?style=for-the-badge&logo=telegram&logoColor=white" alt="Telegram" />
-  </a>
-  <a href="https://dev.to/balajitechlabs_" target="_blank">
-    <img src="https://img.shields.io/badge/DEV-0A0A0A?style=for-the-badge&logo=dev.to&logoColor=white" alt="DEV.to" />
-  </a>
-  <a href="https://leetcode.com/u/balajitechlabs_/" target="_blank">
-    <img src="https://img.shields.io/badge/LeetCode-FFA116?style=for-the-badge&logo=leetcode&logoColor=black" alt="LeetCode" />
-  </a>
-  <a href="https://www.hackerrank.com/profile/bala_developer07" target="_blank">
-    <img src="https://img.shields.io/badge/HackerRank-00EA64?style=for-the-badge&logo=hackerrank&logoColor=black" alt="HackerRank" />
-  </a>
-  <a href="https://www.behance.net/balajitechlab" target="_blank">
-    <img src="https://img.shields.io/badge/Behance-1769FF?style=for-the-badge&logo=behance&logoColor=white" alt="Behance" />
-  </a>
-</p>
-
-<br/>
-
----
-
-<!-- ☕ SUPPORT MY OPEN SOURCE JOURNEY ☕ -->
-<h2 align="center" style="border: none; font-size: 1.8rem; margin-bottom: 15px;">
-☕ <b>Support My Open Source Journey</b>
-</h2>
-
-<p align="center" style="font-size: 0.95rem; color: #8b949e; margin-bottom: 15px;">
-If you enjoy my open-source projects, tools, and Android applications, consider supporting my work!
-</p>
-
-<p align="center">
-  <a href="https://razorpay.me/@balajitechlabs" target="_blank">
-    <img src="https://img.shields.io/badge/Donate-Razorpay-02042B?style=for-the-badge&logo=razorpay&logoColor=white" alt="Razorpay" />
-  </a>
-  <a href="https://balajitechlab.com" target="_blank">
-    <img src="https://img.shields.io/badge/Website-balajitechlab.com-000000?style=for-the-badge&logo=googlechrome&logoColor=white" alt="Website" />
-  </a>
-</p>
-
-<br/>
-
-<!-- Footer Signature -->
-<p align="center" style="font-size: 0.85rem; color: #6e7681;">
-  &copy; 2026 <b>||BTL||™</b> (balajitechlabs) · Crafted with passion in <b>Bengaluru, Karnataka 🇮🇳</b>
-</p>

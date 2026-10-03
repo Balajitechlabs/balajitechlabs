@@ -1,0 +1,37 @@
+name: Update Contribution Calendar
+
+on:
+  schedule:
+    - cron: '0 0,12 * * *'   # 12:00 AM & 12:00 PM UTC
+    - cron: '30 6,18 * * *'  # 12:00 PM & 12:00 AM IST (Indian Standard Time)
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  update-calendar:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout Repository
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: Run Calendar Generator
+        run: python3 scripts/generate_calendar.py
+
+      - name: Commit and Push if Changed
+        run: |
+          git config --global user.name "github-actions[bot]"
+          git config --global user.email "github-actions[bot]@users.noreply.github.com"
+          git add icons/calendar.svg icons/profile_views.svg
+          if git diff --staged --quiet; then
+            echo "No calendar or view updates at this cycle."
+          else
+            git commit -m "chore(profile): update contribution heatmap calendar & views [skip ci]"
+            git push
+          fi

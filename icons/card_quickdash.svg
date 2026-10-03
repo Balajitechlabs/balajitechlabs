@@ -1,0 +1,109 @@
+<svg width="460" height="208" viewBox="0 0 460 208" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="chromeShimmer" x1="-100%" y1="0%" x2="200%" y2="0%">
+      <stop offset="0%" stop-color="#666666" />
+      <stop offset="35%" stop-color="#ffffff" />
+      <stop offset="50%" stop-color="#ffffff" />
+      <stop offset="65%" stop-color="#666666" />
+      <stop offset="100%" stop-color="#333333" />
+      <animate attributeName="x1" values="-100%;150%" dur="3.5s" repeatCount="indefinite" />
+      <animate attributeName="x2" values="0%;250%" dur="3.5s" repeatCount="indefinite" />
+    </linearGradient>
+    <linearGradient id="borderPulse" x1="-100%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#222222" />
+      <stop offset="50%" stop-color="#ffffff" stop-opacity="1" />
+      <stop offset="100%" stop-color="#222222" />
+      <animate attributeName="x1" values="-100%;100%" dur="3s" repeatCount="indefinite" />
+      <animate attributeName="x2" values="0%;200%" dur="3s" repeatCount="indefinite" />
+    </linearGradient>
+  </defs>
+  <style>
+    .card-bg { fill: #000000; stroke: #2a2a2a; stroke-width: 1.5; rx: 12px; }
+    .card-title { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', monospace; font-size: 16px; font-weight: 800; fill: url(#chromeShimmer); }
+    .card-desc { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; font-size: 11.5px; fill: #a0a0a0; line-height: 1.4; }
+    .pill-bg { fill: #111111; stroke: #2a2a2a; stroke-width: 1; rx: 4px; }
+    .pill-text { font-family: 'SF Mono', monospace; font-size: 9.5px; font-weight: 600; fill: #ffffff; }
+    .tag-bg { fill: #161616; stroke: #333333; stroke-width: 1; rx: 10px; }
+    .tag-text { font-family: 'SF Mono', monospace; font-size: 9.5px; font-weight: 700; fill: #ffffff; letter-spacing: 0.5px; }
+    .meta-text { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; font-size: 11px; font-weight: 600; fill: #888888; }
+    .logo-path { fill: #ffffff; }
+    .logo-stroke { stroke: #ffffff; }
+    .logo-fill { fill: #ffffff; }
+    .inner-btn-bg { fill: #111111; stroke: #333333; stroke-width: 1; rx: 6px; }
+    .inner-btn-text { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', monospace; font-size: 11px; font-weight: 700; fill: #ffffff; }
+    .divider { stroke: #222222; stroke-width: 1; }
+    @media (prefers-color-scheme: light) {
+      .card-bg { fill: #ffffff; stroke: #000000; }
+      .card-title { fill: #000000; }
+      .card-desc { fill: #333333; }
+      .pill-bg { fill: #ffffff; stroke: #000000; }
+      .pill-text { fill: #000000; }
+      .tag-bg { fill: #000000; stroke: #000000; }
+      .tag-text { fill: #ffffff; }
+      .meta-text { fill: #000000; }
+      .logo-path { fill: #000000; }
+      .logo-stroke { stroke: #000000; }
+      .logo-fill { fill: #000000; }
+      .inner-btn-bg { fill: #ffffff; stroke: #000000; }
+      .inner-btn-text { fill: #000000; }
+      .divider { stroke: #e1e4e8; }
+    }
+  </style>
+
+  <!-- Card Background (Pure Pitch Black #000000) -->
+  <rect x="1" y="1" width="458" height="206" class="card-bg" />
+
+  <!-- Animated Top Monochrome Accent Line -->
+  <line x1="16" y1="1" x2="160" y2="1" stroke="url(#borderPulse)" stroke-width="2" stroke-linecap="round" />
+
+  
+  <!-- Logo (QuickDash isometric sheets) -->
+  <g transform="translate(18, 16) scale(0.065)">
+    <path class="logo-path" d="M333.334808,190.591583 C344.128754,197.982925 354.624969,205.170456 364.879395,212.192398 C364.300323,214.696335 362.798096,215.304581 361.613495,216.111694 C328.188080,238.885803 294.713379,261.587769 261.337982,284.434814 C257.997406,286.721619 255.533569,286.370514 252.374680,284.212524 C219.146866,261.512970 185.841003,238.927658 152.568558,216.293381 C151.359650,215.470993 150.272873,214.469055 149.304611,213.691650 C149.371429,211.455475 150.941086,210.879410 152.119156,210.076904 C185.688263,187.209473 219.298843,164.402771 252.819839,141.465134 C255.940750,139.329575 258.294403,139.414047 261.343079,141.505936 C285.192566,157.870605 309.128082,174.109848 333.334808,190.591583 Z" />
+    <path class="logo-path" opacity="0.75" d="M270.252655,366.313721 C267.612122,368.099976 265.064178,369.448242 262.947754,371.291870 C258.849426,374.862122 255.370224,374.286011 251.011536,371.295471 C218.654327,349.095062 186.138031,327.126526 153.682938,305.068634 C152.066376,303.969910 150.226410,303.086060 149.331589,301.552094 C149.215836,300.206512 149.886642,299.643982 150.557739,299.186401 C160.734634,292.247375 170.998489,285.432861 181.076706,278.353851 C184.386444,276.029083 186.585281,277.725403 189.099548,279.440948 C208.046646,292.369049 226.978149,305.320435 245.980240,318.167328 C254.682373,324.050690 260.047485,323.710907 268.834747,317.685303 C287.504425,304.883118 306.309723,292.278320 324.950775,279.434906 C328.462372,277.015442 331.111847,276.823242 334.723145,279.459503 C343.309967,285.727783 352.260498,291.496979 361.042236,297.499786 C362.384949,298.417572 363.925842,299.168091 365.141083,301.626251 C333.625244,323.105225 302.082733,344.602386 270.252655,366.313721 Z" />
+  </g>
+
+  <!-- Title -->
+  <text x="60" y="37" class="card-title">quickdash</text>
+
+  <!-- Category Tag -->
+  <rect x="350" y="20" width="92" height="20" class="tag-bg" />
+  <text x="396" y="34" text-anchor="middle" class="tag-text">ANDROID</text>
+
+  <!-- Description -->
+  <text x="18" y="68" class="card-desc">Unified utility dashboard for Android. Instant UPI &amp; PayPal</text>
+  <text x="18" y="86" class="card-desc">collection, WhatsApp direct chat, and rapid shortcuts.</text>
+
+  <!-- Stack Chips -->
+  
+  <rect x="18" y="110" width="62" height="22" class="pill-bg" />
+  <text x="49" y="125" text-anchor="middle" class="pill-text">Kotlin</text>
+  <rect x="88" y="110" width="124" height="22" class="pill-bg" />
+  <text x="150" y="125" text-anchor="middle" class="pill-text">Jetpack Compose</text>
+  <rect x="220" y="110" width="82" height="22" class="pill-bg" />
+  <text x="261" y="125" text-anchor="middle" class="pill-text">Material 3</text>
+
+  <!-- Star Counter -->
+  <text x="410" y="125" class="meta-text" text-anchor="end">★ 25</text>
+
+  <!-- Card Internal Divider -->
+  <line x1="18" y1="150" x2="442" y2="150" class="divider" />
+
+  <!-- Centered Buttons Inside Card -->
+  
+  <rect x="86" y="168" width="88" height="26" class="inner-btn-bg" />
+  <g transform="translate(94, 173) scale(0.55)">
+    <circle cx="12" cy="12" r="10" fill="none" stroke="#ffffff" stroke-width="2"/><line x1="2" y1="12" x2="22" y2="12" stroke="#ffffff" stroke-width="2"/>
+  </g>
+  <text x="114" y="185" class="inner-btn-text">Website</text>
+  <rect x="184" y="168" width="98" height="26" class="inner-btn-bg" />
+  <g transform="translate(192, 173) scale(0.55)">
+    <polygon points="5 3 19 12 5 21 5 3" fill="#ffffff"/>
+  </g>
+  <text x="212" y="185" class="inner-btn-text">Play Store</text>
+  <rect x="292" y="168" width="82" height="26" class="inner-btn-bg" />
+  <g transform="translate(300, 173) scale(0.55)">
+    <path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z" fill="#ffffff"/>
+  </g>
+  <text x="320" y="185" class="inner-btn-text">GitHub</text>
+</svg>

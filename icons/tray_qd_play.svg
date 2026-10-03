@@ -1,0 +1,20 @@
+<svg width="154" height="38" viewBox="0 0 154 38" xmlns="http://www.w3.org/2000/svg">
+  <style>
+    .tray-bg { fill: #ffffff; stroke: #ffffff; stroke-width: 1; }
+    .tray-text { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', monospace; font-size: 11.5px; font-weight: 700; fill: #000000; letter-spacing: 0.3px; }
+    .tray-icon { fill: #000000; }
+    .tray-div { stroke: #000000; stroke-width: 1.5; }
+    @media (prefers-color-scheme: light) {
+      .tray-bg { fill: #000000; stroke: #000000; }
+      .tray-text { fill: #ffffff; }
+      .tray-icon { fill: #ffffff; }
+      .tray-div { stroke: #ffffff; }
+    }
+  </style>
+  <path d="M 0 0 L 0 37 L 154 37 L 154 0 Z" class="tray-bg" />
+  <line x1="153.5" y1="0" x2="153.5" y2="38" class="tray-div" />
+  <g transform="translate(42, 11) scale(0.68)">
+    <polygon points="4 2 18 10 4 18 4 2" class="tray-icon" />
+  </g>
+  <text x="66" y="23" class="tray-text">Play Store</text>
+</svg>

@@ -1,0 +1,28 @@
+<svg width="205" height="28" viewBox="0 0 205 28" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="titleShimmer" x1="-100%" y1="0%" x2="200%" y2="0%">
+      <stop offset="0%" stop-color="#777777" />
+      <stop offset="35%" stop-color="#ffffff" />
+      <stop offset="50%" stop-color="#ffffff" />
+      <stop offset="65%" stop-color="#777777" />
+      <stop offset="100%" stop-color="#444444" />
+      <animate attributeName="x1" values="-100%;150%" dur="3.5s" repeatCount="indefinite" />
+      <animate attributeName="x2" values="0%;250%" dur="3.5s" repeatCount="indefinite" />
+    </linearGradient>
+  </defs>
+  <style>
+    .t-text { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', monospace; font-size: 16px; font-weight: 800; fill: url(#titleShimmer); }
+    .l-path { fill: #ffffff; }
+    @media (prefers-color-scheme: light) {
+      .t-text { fill: #000000; }
+      .l-path { fill: #000000; }
+    }
+  </style>
+  <g transform="translate(0, 3)">
+    <g transform="scale(0.22)">
+  <polygon points="50,6 90,28 90,72 50,94 10,72 10,28" fill="none" stroke="#ffffff" stroke-width="6" class="l-path" />
+  <text x="50" y="58" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', monospace" font-size="24" font-weight="900" text-anchor="middle" letter-spacing="2" class="l-path">BTL</text>
+</g>
+  </g>
+  <text x="32" y="19" class="t-text">balajitechlab.com</text>
+</svg>
