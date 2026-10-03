@@ -227,14 +227,15 @@ def update_profile_views():
     print(f"Generated {views_path} successfully with count {count_str}.")
 
     # Also sync view count in integrated footer wave
-    wave_path = os.path.join(BASE_DIR, 'icons', 'wave.svg')
-    if os.path.exists(wave_path):
-        with open(wave_path, 'r') as f:
-            wave_content = f.read()
-        wave_updated = re.sub(r'class="count-text">[0-9,]+\+?<', f'class="count-text">{count_str}+<', wave_content)
-        with open(wave_path, 'w') as f:
-            f.write(wave_updated)
-        print(f"Synchronized {wave_path} with count {count_str}+.")
+    for w_name in ['wave.svg', 'footer_wave.svg']:
+        w_path = os.path.join(BASE_DIR, 'icons', w_name)
+        if os.path.exists(w_path):
+            with open(w_path, 'r') as f:
+                w_content = f.read()
+            w_updated = re.sub(r'class="count-text">[0-9,]+\+?<', f'class="count-text">{count_str}+<', w_content)
+            with open(w_path, 'w') as f:
+                f.write(w_updated)
+            print(f"Synchronized {w_path} with count {count_str}+.")
 
 if __name__ == '__main__':
     generate_calendar()
