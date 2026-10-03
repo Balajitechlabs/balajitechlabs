@@ -1,8 +1,7 @@
 <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" xmlns="http://www.w3.org/2000/svg">
   <style>
-    polyline, line, rect { stroke: #181717; }
-    @media (prefers-color-scheme: dark) {
-      polyline, line, rect { stroke: #ffffff; }
+    polyline, line, rect { stroke: #ffffff; }
+    @media (prefers-color-scheme: light) { path, circle, line { stroke: #000000; } }
     }
   </style>
   <polyline points="16 18 22 12 16 6"/>

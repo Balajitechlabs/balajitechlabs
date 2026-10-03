@@ -4,62 +4,59 @@
 <td width="65%" valign="top" style="border: none; padding-right: 14px;">
 <img src="icons/capsule.svg" width="100%" style="max-width: 420px; margin-bottom: 12px; display: block;" alt="balajitechlabs" />
 <img src="icons/title_connect.svg" height="20" width="209" style="margin-bottom: 6px; display: block;" alt="Connect With Me" />
-<table border="1" cellpadding="5" style="border-collapse: collapse; margin-bottom: 10px;">
+<table border="1" cellpadding="6" style="border-collapse: collapse; margin-bottom: 12px;">
 <tr>
-<td align="center" width="34"><a href="https://balajitechlab.com" title="Official Website (balajitechlab.com)"><img src="icons/website.svg" width="20" height="20" alt="Website" /></a></td>
-<td align="center" width="34"><a href="https://instagram.com/balajitechlabs" title="Instagram"><img src="icons/instagram.svg" width="20" height="20" alt="Instagram" /></a></td>
-<td align="center" width="34"><a href="https://x.com/balajitechlabs" title="X (Twitter)"><img src="icons/x.svg" width="20" height="20" alt="X" /></a></td>
-<td align="center" width="34"><a href="https://youtube.com/@balajitechlabs-org" title="YouTube (@balajitechlabs-org)"><img src="icons/youtube.svg" width="20" height="20" alt="YouTube" /></a></td>
-<td align="center" width="34"><a href="https://discord.com/users/1402595333120458782" title="Discord"><img src="icons/discord.svg" width="20" height="20" alt="Discord" /></a></td>
-</tr>
-<tr>
-<td align="center" width="34"><a href="https://t.me/balajitechlabs" title="Telegram"><img src="icons/telegram.svg" width="20" height="20" alt="Telegram" /></a></td>
-<td align="center" width="34"><a href="https://linkedin.com/in/balajitechlabs" title="LinkedIn"><img src="icons/linkedin.svg" width="20" height="20" alt="LinkedIn" /></a></td>
-<td align="center" width="34"><a href="https://www.reddit.com/user/balaji_developer" title="Reddit (u/balaji_developer)"><img src="icons/reddit.svg" width="20" height="20" alt="Reddit" /></a></td>
-<td align="center" width="34"><a href="mailto:balajitechlabs.github@gmail.com" title="Mail"><img src="icons/gmail.svg" width="20" height="20" alt="Email" /></a></td>
-<td align="center" width="34" style="border: none;"></td>
+<td align="center" width="42"><a href="https://balajitechlab.com" title="Official Website (balajitechlab.com)"><img src="icons/website.svg" width="26" height="26" alt="Website" /></a></td>
+<td align="center" width="42"><a href="https://instagram.com/balajitechlabs" title="Instagram"><img src="icons/instagram.svg" width="26" height="26" alt="Instagram" /></a></td>
+<td align="center" width="42"><a href="https://x.com/balajitechlabs" title="X (Twitter)"><img src="icons/x.svg" width="26" height="26" alt="X" /></a></td>
+<td align="center" width="42"><a href="https://youtube.com/@balajitechlabs-org" title="YouTube (@balajitechlabs-org)"><img src="icons/youtube.svg" width="26" height="26" alt="YouTube" /></a></td>
+<td align="center" width="42"><a href="https://discord.com/users/1402595333120458782" title="Discord"><img src="icons/discord.svg" width="26" height="26" alt="Discord" /></a></td>
+<td align="center" width="42"><a href="https://t.me/balajitechlabs" title="Telegram"><img src="icons/telegram.svg" width="26" height="26" alt="Telegram" /></a></td>
+<td align="center" width="42"><a href="https://linkedin.com/in/balajitechlabs" title="LinkedIn"><img src="icons/linkedin.svg" width="26" height="26" alt="LinkedIn" /></a></td>
+<td align="center" width="42"><a href="https://www.reddit.com/user/balaji_developer" title="Reddit (u/balaji_developer)"><img src="icons/reddit.svg" width="26" height="26" alt="Reddit" /></a></td>
+<td align="center" width="42"><a href="mailto:balajitechlabs.github@gmail.com" title="Mail"><img src="icons/gmail.svg" width="26" height="26" alt="Email" /></a></td>
 </tr>
 </table>
 <img src="icons/title_communities.svg" height="20" width="173" style="margin-bottom: 6px; display: block;" alt="Communities" />
-<table border="1" cellpadding="5" style="border-collapse: collapse; margin-bottom: 10px;">
+<table border="1" cellpadding="6" style="border-collapse: collapse; margin-bottom: 12px;">
 <tr>
-<td align="center" width="34"><a href="https://t.me/btldotdev/" title="Telegram Community (@btldotdev)"><img src="icons/telegram.svg" width="20" height="20" alt="Telegram Community" /></a></td>
-<td align="center" width="34"><a href="https://www.reddit.com/r/balajitechlabs/" title="Reddit Community (r/balajitechlabs)"><img src="icons/reddit.svg" width="20" height="20" alt="Reddit Community" /></a></td>
+<td align="center" width="42"><a href="https://t.me/btldotdev/" title="Telegram Community (@btldotdev)"><img src="icons/telegram.svg" width="26" height="26" alt="Telegram Community" /></a></td>
+<td align="center" width="42"><a href="https://www.reddit.com/r/balajitechlabs/" title="Reddit Community (r/balajitechlabs)"><img src="icons/reddit.svg" width="26" height="26" alt="Reddit Community" /></a></td>
 </tr>
 </table>
 <img src="icons/title_donate.svg" height="20" width="218" style="margin-bottom: 6px; display: block;" alt="Support &amp; Sponsor" />
-<table border="1" cellpadding="5" style="border-collapse: collapse; margin-bottom: 12px;">
+<table border="1" cellpadding="6" style="border-collapse: collapse; margin-bottom: 14px;">
 <tr>
-<td align="center" width="34"><a href="https://rzp.io/rzp/btl-donation" title="Donate via Razorpay"><img src="icons/razorpay.svg" width="20" height="20" alt="Razorpay" /></a></td>
-<td align="center" width="34"><a href="https://github.com/sponsors/balajitechlabs" title="GitHub Sponsors"><img src="icons/githubsponsors.svg" width="20" height="20" alt="GitHub Sponsors" /></a></td>
+<td align="center" width="42"><a href="https://rzp.io/rzp/btl-donation" title="Donate via Razorpay"><img src="icons/razorpay.svg" width="26" height="26" alt="Razorpay" /></a></td>
+<td align="center" width="42"><a href="https://github.com/sponsors/balajitechlabs" title="GitHub Sponsors"><img src="icons/githubsponsors.svg" width="26" height="26" alt="GitHub Sponsors" /></a></td>
 </tr>
 </table>
-<hr style="border: none; border-top: 1px solid #30363d; margin: 14px 0;" />
+<hr style="border: none; border-top: 1px solid #30363d; margin: 16px 0;" />
 <img src="icons/title_stack.svg" height="20" width="336" style="margin-bottom: 6px; display: block;" alt="Core Tech Stack &amp; Startup Arsenal" />
-<table border="1" cellpadding="4" style="border-collapse: collapse;">
+<table border="1" cellpadding="6" style="border-collapse: collapse;">
 <tr>
-<td align="center" width="30"><a href="https://developer.android.com" title="Android"><img src="icons/android.svg" width="18" height="18" alt="Android" /></a></td>
-<td align="center" width="30"><a href="https://kotlinlang.org" title="Kotlin"><img src="icons/kotlin.svg" width="18" height="18" alt="Kotlin" /></a></td>
-<td align="center" width="30"><a href="https://developer.android.com/jetpack/compose" title="Jetpack Compose"><img src="icons/compose.svg" width="18" height="18" alt="Jetpack Compose" /></a></td>
-<td align="center" width="30"><a href="https://m3.material.io" title="Material Design 3"><img src="icons/materialdesign.svg" width="18" height="18" alt="Material Design" /></a></td>
-<td align="center" width="30"><a href="https://gradle.org" title="Gradle"><img src="icons/gradle.svg" width="18" height="18" alt="Gradle" /></a></td>
-<td align="center" width="30"><a href="https://git-scm.com" title="Git"><img src="icons/git.svg" width="18" height="18" alt="Git" /></a></td>
+<td align="center" width="44"><a href="https://developer.android.com" title="Android"><img src="icons/android.svg" width="26" height="26" alt="Android" /></a></td>
+<td align="center" width="44"><a href="https://kotlinlang.org" title="Kotlin"><img src="icons/kotlin.svg" width="26" height="26" alt="Kotlin" /></a></td>
+<td align="center" width="44"><a href="https://developer.android.com/jetpack/compose" title="Jetpack Compose"><img src="icons/compose.svg" width="26" height="26" alt="Jetpack Compose" /></a></td>
+<td align="center" width="44"><a href="https://m3.material.io" title="Material Design 3"><img src="icons/materialdesign.svg" width="26" height="26" alt="Material Design" /></a></td>
+<td align="center" width="44"><a href="https://gradle.org" title="Gradle"><img src="icons/gradle.svg" width="26" height="26" alt="Gradle" /></a></td>
+<td align="center" width="44"><a href="https://git-scm.com" title="Git"><img src="icons/git.svg" width="26" height="26" alt="Git" /></a></td>
 </tr>
 <tr>
-<td align="center" width="30"><a href="https://www.typescriptlang.org" title="TypeScript"><img src="icons/typescript.svg" width="18" height="18" alt="TypeScript" /></a></td>
-<td align="center" width="30"><a href="https://react.dev" title="React"><img src="icons/react.svg" width="18" height="18" alt="React" /></a></td>
-<td align="center" width="30"><a href="https://nodejs.org" title="Node.js"><img src="icons/node.svg" width="18" height="18" alt="Node.js" /></a></td>
-<td align="center" width="30"><a href="https://www.python.org" title="Python"><img src="icons/python.svg" width="18" height="18" alt="Python" /></a></td>
-<td align="center" width="30"><a href="https://firebase.google.com" title="Firebase"><img src="icons/firebase.svg" width="18" height="18" alt="Firebase" /></a></td>
-<td align="center" width="30"><a href="https://www.docker.com" title="Docker"><img src="icons/docker.svg" width="18" height="18" alt="Docker" /></a></td>
+<td align="center" width="44"><a href="https://www.typescriptlang.org" title="TypeScript"><img src="icons/typescript.svg" width="26" height="26" alt="TypeScript" /></a></td>
+<td align="center" width="44"><a href="https://react.dev" title="React"><img src="icons/react.svg" width="26" height="26" alt="React" /></a></td>
+<td align="center" width="44"><a href="https://nodejs.org" title="Node.js"><img src="icons/node.svg" width="26" height="26" alt="Node.js" /></a></td>
+<td align="center" width="44"><a href="https://www.python.org" title="Python"><img src="icons/python.svg" width="26" height="26" alt="Python" /></a></td>
+<td align="center" width="44"><a href="https://firebase.google.com" title="Firebase"><img src="icons/firebase.svg" width="26" height="26" alt="Firebase" /></a></td>
+<td align="center" width="44"><a href="https://www.docker.com" title="Docker"><img src="icons/docker.svg" width="26" height="26" alt="Docker" /></a></td>
 </tr>
 <tr>
-<td align="center" width="30"><a href="https://www.linux.org" title="Linux"><img src="icons/linux.svg" width="18" height="18" alt="Linux" /></a></td>
-<td align="center" width="30"><a href="https://ohmyz.sh" title="Oh My Zsh"><img src="icons/ohmyzsh.svg" width="18" height="18" alt="Oh My Zsh" /></a></td>
-<td align="center" width="30"><a href="https://www.figma.com" title="Figma"><img src="icons/figma.svg" width="18" height="18" alt="Figma" /></a></td>
-<td align="center" width="30"><a href="https://tailwindcss.com" title="Tailwind CSS"><img src="icons/tailwindcss.svg" width="18" height="18" alt="Tailwind CSS" /></a></td>
-<td align="center" width="30"><a href="https://nextjs.org" title="Next.js"><img src="icons/nextdotjs.svg" width="18" height="18" alt="Next.js" /></a></td>
-<td align="center" width="30"><a href="https://www.postgresql.org" title="PostgreSQL"><img src="icons/postgresql.svg" width="18" height="18" alt="PostgreSQL" /></a></td>
+<td align="center" width="44"><a href="https://www.linux.org" title="Linux"><img src="icons/linux.svg" width="26" height="26" alt="Linux" /></a></td>
+<td align="center" width="44"><a href="https://ohmyz.sh" title="Oh My Zsh"><img src="icons/ohmyzsh.svg" width="26" height="26" alt="Oh My Zsh" /></a></td>
+<td align="center" width="44"><a href="https://www.figma.com" title="Figma"><img src="icons/figma.svg" width="26" height="26" alt="Figma" /></a></td>
+<td align="center" width="44"><a href="https://tailwindcss.com" title="Tailwind CSS"><img src="icons/tailwindcss.svg" width="26" height="26" alt="Tailwind CSS" /></a></td>
+<td align="center" width="44"><a href="https://nextjs.org" title="Next.js"><img src="icons/nextdotjs.svg" width="26" height="26" alt="Next.js" /></a></td>
+<td align="center" width="44"><a href="https://www.postgresql.org" title="PostgreSQL"><img src="icons/postgresql.svg" width="26" height="26" alt="PostgreSQL" /></a></td>
 </tr>
 </table>
 </td>
@@ -115,12 +112,12 @@
 </p>
 
 <img src="icons/calendar.svg" width="100%" style="display: block; margin-top: 12px;" alt="GitHub Contribution Calendar" />
-<img src="icons/wave.svg" width="100%" style="display: block; margin: 28px 0 16px 0;" alt="Wave" />
-<hr style="border: none; border-top: 1px solid #30363d; margin: 20px 0;" />
+<hr style="border: none; border-top: 1px solid #30363d; margin: 28px 0 20px 0;" />
 <div align="center">
 <a href="https://komarev.com/ghpvc/?username=Balajitechlabs"><img src="icons/profile_views.svg" height="28" width="140" alt="Profile Views" /></a>
 <br/><br/>
-<p align="center" style="font-size: 0.85rem; color: #888888; margin: 0;">
-&copy; 2026 <b>||BTL||&trade;</b> (Balaji S) &middot; Designed with Pure Monochrome Engineering
+<p align="center" style="font-size: 0.85rem; color: #888888; margin: 0 0 16px 0;">
+&copy; 2026 <b>||BTL||&trade;</b> &middot; Designed with Pure ❤️
 </p>
+<img src="icons/wave.svg" width="100%" style="display: block; margin-top: 16px;" alt="Wave" />
 </div>

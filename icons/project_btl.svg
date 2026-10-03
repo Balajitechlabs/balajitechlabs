@@ -1,10 +1,9 @@
 <svg role="img" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
   <title>balajitechlab.com</title>
   <style>
-    .stroke-col { stroke: #181717; }
-    .fill-col { fill: #181717; }
-    @media (prefers-color-scheme: dark) {
-      .stroke-col { stroke: #ffffff; }
+    .stroke-col { stroke: #ffffff; }
+    .fill-col { fill: #ffffff; }
+    @media (prefers-color-scheme: light) { path, circle, line { stroke: #000000; } }
       .fill-col { fill: #ffffff; }
     }
   </style>

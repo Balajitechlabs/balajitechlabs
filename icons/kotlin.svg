@@ -1,7 +1,5 @@
 <svg role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
 <style>
-path, polygon, rect { fill: #181717; }
-@media (prefers-color-scheme: dark) {
-  path, polygon, rect { fill: #ffffff; }
-}
+path, polygon, rect { fill: #ffffff; }
+@media (prefers-color-scheme: light) { path, polygon, rect, circle { fill: #000000; } }
 </style><title>Kotlin</title><path d="M24 24H0V0h24L12 12Z"/></svg>
