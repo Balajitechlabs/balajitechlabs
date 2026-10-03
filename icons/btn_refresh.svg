@@ -1,0 +1,17 @@
+<svg width="156" height="26" viewBox="0 0 156 26" xmlns="http://www.w3.org/2000/svg">
+  <style>
+    .btn-bg { fill: #000000; stroke: #2a2a2a; stroke-width: 1; rx: 6px; }
+    .btn-text { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', monospace; font-size: 11px; font-weight: 700; fill: #ffffff; letter-spacing: 0.3px; }
+    .btn-icon { fill: #ffffff; }
+    @media (prefers-color-scheme: light) {
+      .btn-bg { fill: #ffffff; stroke: #000000; }
+      .btn-text { fill: #000000; }
+      .btn-icon { fill: #000000; }
+    }
+  </style>
+  <rect x="1" y="1" width="154" height="24" class="btn-bg" />
+  <g transform="translate(14, 5) scale(0.95)">
+    <path class="btn-icon" fill-rule="evenodd" d="M8 2.5a5.487 5.487 0 0 0-4.131 1.869l1.204 1.204A.25.25 0 0 1 4.896 6H1.25A.25.25 0 0 1 1 5.75V2.104a.25.25 0 0 1 .427-.177l1.38 1.38A7.001 7.001 0 0 1 14.95 7.16a.75.75 0 1 1-1.49.178A5.5 5.5 0 0 0 8 2.5zM1.705 8.005a.75.75 0 0 1 .834.656 5.5 5.5 0 0 0 9.592 2.97l-1.204-1.204a.25.25 0 0 1 .177-.427h3.646c.138 0 .25.112.25.25v3.646a.25.25 0 0 1-.427.177l-1.38-1.38A7.001 7.001 0 0 1 1.05 8.84a.75.75 0 0 1 .656-.834z"/>
+  </g>
+  <text x="36" y="16.5" class="btn-text">Sync Live Track</text>
+</svg>

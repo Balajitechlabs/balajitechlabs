@@ -63,8 +63,8 @@
 <td width="35%" align="center" valign="top" style="border: none; padding-left: 14px;">
 <img src="banner.gif" width="210px" style="border-radius: 16px; box-shadow: 0 4px 20px rgba(0,0,0,0.4); display: block; margin-bottom: 12px;" alt="balajitechlabs" />
 <a href="https://github.com/Balajitechlabs" title="Click to refresh live music"><img src="https://discord-music-nine.vercel.app/api/status/1402595333120458782" width="100%" style="border-radius: 14px; display: block; border: 1px solid #2a2a2a; margin-bottom: 10px;" alt="Discord Live Music" /></a>
-<a href="https://www.last.fm/user/Btl-music" title="Recent Scrobbles on Last.fm"><img src="https://discord-music-nine.vercel.app/api/lastfm?user=Btl-music" width="100%" style="border-radius: 14px; display: block; border: 1px solid #2a2a2a;" alt="Recent Scrobbles on Last.fm" /></a>
-<p align="center" style="margin: 8px 0 0 0;"><a href="https://github.com/Balajitechlabs" title="Click to refresh live track" style="text-decoration: none;"><sub style="color: #8b949e; font-size: 11px;">🔄 <i>Refresh page to sync latest live track</i></sub></a></p>
+<a href="https://www.last.fm/user/Btl-music" title="Recent Scrobbles on Last.fm"><img src="https://discord-music-nine.vercel.app/api/lastfm?user=Btl-music" width="100%" style="border-radius: 14px; display: block; border: 1px solid #2a2a2a; margin-bottom: 10px;" alt="Recent Scrobbles on Last.fm" /></a>
+<a href="https://github.com/Balajitechlabs" title="Sync live track"><img src="icons/btn_refresh.svg" height="26" style="margin-top: 2px; display: block;" alt="Sync Live Track" /></a>
 </td>
 </tr>
 </table>
