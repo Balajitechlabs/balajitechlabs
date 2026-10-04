@@ -109,9 +109,9 @@
 <img src="icons/title_activity.svg" height="22" width="280" style="margin-bottom: 12px; display: block;" alt="GitHub Activity &amp; Metrics" />
 
 <p align="center">
-<a href="https://github.com/Balajitechlabs"><img src="https://streak-stats.demolab.com/?user=Balajitechlabs&amp;theme=dark&amp;background=000000&amp;border=2A2A2A&amp;stroke=2A2A2A&amp;ring=FFFFFF&amp;fire=FFFFFF&amp;currStreakLabel=FFFFFF&amp;currStreakNum=FFFFFF&amp;sideNums=FFFFFF&amp;sideLabels=A0A0A0&amp;dates=888888" width="410" style="max-width: 100%; border-radius: 12px; margin-bottom: 10px;" alt="GitHub Streak Stats" /></a>
+<a href="https://github.com/Balajitechlabs"><img src="https://streak-stats.demolab.com/?user=Balajitechlabs&amp;theme=dark&amp;background=000000&amp;border=2A2A2A&amp;stroke=2A2A2A&amp;ring=FFFFFF&amp;fire=FFFFFF&amp;currStreakLabel=FFFFFF&amp;currStreakNum=FFFFFF&amp;sideNums=FFFFFF&amp;sideLabels=A0A0A0&amp;dates=888888&amp;cache_bust=2" width="410" style="max-width: 100%; border-radius: 12px; margin-bottom: 10px;" alt="GitHub Streak Stats" /></a>
 &nbsp;&nbsp;
-<a href="https://github.com/Balajitechlabs"><img src="https://github-readme-stats.vercel.app/api?username=Balajitechlabs&amp;show_icons=true&amp;bg_color=000000&amp;title_color=FFFFFF&amp;text_color=A0A0A0&amp;icon_color=FFFFFF&amp;border_color=2A2A2A" width="410" style="max-width: 100%; border-radius: 12px; margin-bottom: 10px;" alt="GitHub Profile Stats" /></a>
+<a href="https://github.com/Balajitechlabs"><img src="https://github-readme-stats.vercel.app/api?username=Balajitechlabs&amp;show_icons=true&amp;bg_color=000000&amp;title_color=FFFFFF&amp;text_color=A0A0A0&amp;icon_color=FFFFFF&amp;border_color=2A2A2A&amp;cache_bust=2" width="410" style="max-width: 100%; border-radius: 12px; margin-bottom: 10px;" alt="GitHub Profile Stats" /></a>
 </p>
 
 <img src="icons/calendar.svg?v=3" width="100%" style="display: block; margin-top: 12px;" alt="GitHub Contribution Calendar" />
