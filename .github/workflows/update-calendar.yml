@@ -5,6 +5,13 @@ on:
     - cron: '0 0,12 * * *'   # 12:00 AM & 12:00 PM UTC
     - cron: '30 6,18 * * *'  # 12:00 PM & 12:00 AM IST (Indian Standard Time)
   workflow_dispatch:
+  push:
+    branches:
+      - main
+    paths-ignore:
+      - 'icons/**'
+      - 'README.md'
+      - 'PROFILE_README.md'
 
 permissions:
   contents: write
@@ -28,7 +35,7 @@ jobs:
         run: |
           git config --global user.name "github-actions[bot]"
           git config --global user.email "github-actions[bot]@users.noreply.github.com"
-          git add icons/calendar.svg icons/profile_views.svg
+          git add icons/calendar.svg icons/profile_views.svg icons/wave.svg icons/footer_wave.svg
           if git diff --staged --quiet; then
             echo "No calendar or view updates at this cycle."
           else
