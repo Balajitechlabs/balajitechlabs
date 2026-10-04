@@ -151,6 +151,10 @@ def generate_calendar():
     total_all_time = year_contributions + historical_2025
     badge_text = f"{year_contributions} in {current_year}  \u2022  {total_all_time} All-Time"
 
+    ist_tz = datetime.timezone(datetime.timedelta(hours=5, minutes=30))
+    now_ist = datetime.datetime.now(datetime.timezone.utc).astimezone(ist_tz)
+    updated_str = now_ist.strftime('%d %b %Y, %I:%M %p IST')
+
     # Calculate month header labels matching GitHub thead colspans:
     # Group weeks into contiguous month spans, only render labels if span >= 2 columns
     month_labels = []
@@ -281,6 +285,12 @@ def generate_calendar():
   <!-- Contribution Heatmap Grid -->
   <g id="heatmap-grid">
   {rects_svg}
+  </g>
+
+  <!-- Last Updated at Bottom Left -->
+  <g transform="translate(22, 166)">
+    <circle cx="3" cy="5" r="2.5" class="legend-text" />
+    <text x="11" y="8.5" class="legend-text">Updated: {updated_str}</text>
   </g>
 
   <!-- Legend at Bottom Right -->
