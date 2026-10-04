@@ -29,6 +29,8 @@ jobs:
           python-version: '3.11'
 
       - name: Run Calendar Generator
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: python3 scripts/generate_calendar.py
 
       - name: Commit and Push if Changed

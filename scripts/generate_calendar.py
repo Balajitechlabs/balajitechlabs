@@ -3,8 +3,69 @@ import urllib.request, json, datetime, os, re
 
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 
+def fetch_from_graphql(token):
+    """Fetch contribution data directly via official GitHub GraphQL API when GITHUB_TOKEN is available."""
+    url = 'https://api.github.com/graphql'
+    query = """
+    query {
+      user(login: "Balajitechlabs") {
+        contributionsCollection {
+          contributionCalendar {
+            totalContributions
+            weeks {
+              contributionDays {
+                contributionCount
+                date
+                contributionLevel
+              }
+            }
+          }
+        }
+      }
+    }
+    """
+    level_map = {
+        'NONE': 0,
+        'FIRST_QUARTILE': 1,
+        'SECOND_QUARTILE': 2,
+        'THIRD_QUARTILE': 3,
+        'FOURTH_QUARTILE': 4,
+    }
+    try:
+        req = urllib.request.Request(
+            url,
+            data=json.dumps({'query': query}).encode('utf-8'),
+            headers={
+                'Authorization': f'Bearer {token}',
+                'Content-Type': 'application/json',
+                'User-Agent': 'Mozilla/5.0'
+            }
+        )
+        with urllib.request.urlopen(req, timeout=10) as resp:
+            result = json.loads(resp.read().decode('utf-8'))
+        cal = result['data']['user']['contributionsCollection']['contributionCalendar']
+        conts = []
+        for w in cal.get('weeks', []):
+            for d in w.get('contributionDays', []):
+                conts.append({
+                    'date': d['date'],
+                    'count': d['contributionCount'],
+                    'level': level_map.get(d.get('contributionLevel', 'NONE'), 0)
+                })
+        print(f"Official GitHub GraphQL API succeeded with {len(conts)} contribution days.")
+        return {'contributions': conts}
+    except Exception as e:
+        print(f"GraphQL fetch failed ({e}), falling back to direct scrape...")
+        return None
+
 def fetch_contributions_data():
-    """Fetch contribution data directly from official GitHub public page first (source of truth), with fallback to API."""
+    """Fetch contribution data using GraphQL -> direct scrape -> API fallback chain."""
+    token = os.environ.get('GITHUB_TOKEN')
+    if token:
+        gql_data = fetch_from_graphql(token)
+        if gql_data and len(gql_data.get('contributions', [])) > 0:
+            return gql_data
+
     import time
     fallback_url = f'https://github.com/users/Balajitechlabs/contributions?_t={int(time.time())}'
     req_fb = urllib.request.Request(fallback_url, headers={
@@ -61,12 +122,6 @@ def generate_calendar():
     except ValueError:
         min_date = today - datetime.timedelta(days=365)
 
-    # GitHub contribution graph structure:
-    # - Weeks run Sunday (row 0) through Saturday (row 6).
-    # - Standard GitHub graph spans 53 columns to cover a full rolling 365-day year.
-    # - The first column starts on Sunday of the week containing min_date.
-    # - The last column is the current week, ending on today.
-    # - Past days (< min_date) and future days (> today) are omitted, matching GitHub DOM.
     days_since_sunday = (today.weekday() + 1) % 7
     grid_end_sunday = today - datetime.timedelta(days=days_since_sunday)
     
@@ -90,9 +145,11 @@ def generate_calendar():
     pitch = cell_size + gap
 
     current_year = today.year
-    total_contributions = data.get('total', {}).get(str(current_year), 0)
-    if not total_contributions:
-        total_contributions = sum(c.get('count', 0) for c in data.get('contributions', []) if c.get('date', '').startswith(str(current_year)))
+    year_contributions = sum(c.get('count', 0) for c in data.get('contributions', []) if c.get('date', '').startswith(str(current_year)))
+    total_contributions = year_contributions
+    historical_2025 = 15
+    total_all_time = year_contributions + historical_2025
+    badge_text = f"{year_contributions} in {current_year}  \u2022  {total_all_time} All-Time"
 
     # Calculate month header labels matching GitHub thead colspans:
     # Group weeks into contiguous month spans, only render labels if span >= 2 columns
@@ -210,8 +267,8 @@ def generate_calendar():
   </g>
 
   <!-- Right Header: Total Count Pill -->
-  <rect x="656" y="15" width="164" height="20" class="stat-badge-bg" />
-  <text x="738" y="29" text-anchor="middle" class="stat-badge-text">{total_contributions} Contributions in {current_year}</text>
+  <rect x="624" y="15" width="196" height="20" class="stat-badge-bg" />
+  <text x="722" y="29" text-anchor="middle" class="stat-badge-text">{badge_text}</text>
 
   <!-- Month Labels -->
   {month_svg}
@@ -241,7 +298,7 @@ def generate_calendar():
     cal_path = os.path.join(BASE_DIR, 'icons', 'calendar.svg')
     with open(cal_path, 'w') as f:
         f.write(svg_content)
-    print(f"Generated {cal_path} successfully with {total_contributions} contributions.")
+    print(f"Generated {cal_path} successfully with {year_contributions} contributions ({total_all_time} all-time).")
 
     dev_icons_dir = '/Users/btl/Developer/icons'
     if os.path.exists(dev_icons_dir) and os.path.abspath(os.path.join(BASE_DIR, 'icons')) != os.path.abspath(dev_icons_dir):
