@@ -460,7 +460,7 @@
   <!-- Last Updated at Bottom Left -->
   <g transform="translate(22, 166)">
     <circle cx="3" cy="5" r="2.5" class="legend-text" />
-    <text x="11" y="8.5" class="legend-text">Updated: 04 Oct 2026, 06:10 PM IST</text>
+    <text x="11" y="8.5" class="legend-text">Updated: 04 Oct 2026, 10:12 PM IST</text>
   </g>
 
   <!-- Legend at Bottom Right -->
