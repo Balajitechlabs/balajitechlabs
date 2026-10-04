@@ -67,7 +67,7 @@
 
   <!-- Right Header: Total Count Pill -->
   <rect x="656" y="15" width="164" height="20" class="stat-badge-bg" />
-  <text x="738" y="29" text-anchor="middle" class="stat-badge-text">557 Contributions in 2026</text>
+  <text x="738" y="29" text-anchor="middle" class="stat-badge-text">558 Contributions in 2026</text>
 
   <!-- Month Labels -->
   <text x="55.0" y="52" class="month-text">Oct</text>
@@ -454,7 +454,7 @@
   <rect x="743.5" y="116.0" width="10" height="10" rx="2" class="lvl-1"><title>2026-10-01: 1 contribution</title></rect>
   <rect x="743.5" y="129.5" width="10" height="10" rx="2" class="lvl-1"><title>2026-10-02: 4 contributions</title></rect>
   <rect x="743.5" y="143.0" width="10" height="10" rx="2" class="lvl-3"><title>2026-10-03: 35 contributions</title></rect>
-  <rect x="757.0" y="62.0" width="10" height="10" rx="2" class="lvl-1"><title>2026-10-04: 1 contribution</title></rect>
+  <rect x="757.0" y="62.0" width="10" height="10" rx="2" class="lvl-1"><title>2026-10-04: 2 contributions</title></rect>
   </g>
 
   <!-- Legend at Bottom Right -->
