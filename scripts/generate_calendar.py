@@ -77,9 +77,9 @@ def generate_calendar():
 
     color_map_dark = {
         0: ('#141414', '#222222'),
-        1: ('#3d3d3d', '#3d3d3d'),
-        2: ('#707070', '#707070'),
-        3: ('#adadad', '#adadad'),
+        1: ('#555555', '#555555'),
+        2: ('#888888', '#888888'),
+        3: ('#cccccc', '#cccccc'),
         4: ('#ffffff', '#ffffff')
     }
 
@@ -172,9 +172,9 @@ def generate_calendar():
     .octicon {{ fill: #ffffff; }}
 
     .lvl-0 {{ fill: #141414; stroke: #222222; stroke-width: 0.8; }}
-    .lvl-1 {{ fill: #3d3d3d; }}
-    .lvl-2 {{ fill: #707070; }}
-    .lvl-3 {{ fill: #adadad; }}
+    .lvl-1 {{ fill: #555555; }}
+    .lvl-2 {{ fill: #888888; }}
+    .lvl-3 {{ fill: #cccccc; }}
     .lvl-4 {{ fill: #ffffff; }}
 
     @media (prefers-color-scheme: light) {{
