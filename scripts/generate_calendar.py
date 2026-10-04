@@ -4,19 +4,14 @@ import urllib.request, json, datetime, os, re
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 
 def fetch_contributions_data():
-    """Fetch contribution data with primary API and fallback to GitHub public page."""
-    url = 'https://github-contributions-api.jogruber.de/v4/Balajitechlabs'
-    req = urllib.request.Request(url, headers={'User-Agent': 'Mozilla/5.0'})
-    try:
-        with urllib.request.urlopen(req, timeout=10) as resp:
-            data = json.loads(resp.read().decode())
-            if data and 'contributions' in data:
-                return data
-    except Exception as e:
-        print(f"Primary API fetch failed ({e}), falling back to direct GitHub scrape...")
-
-    fallback_url = 'https://github.com/users/Balajitechlabs/contributions'
-    req_fb = urllib.request.Request(fallback_url, headers={'User-Agent': 'Mozilla/5.0'})
+    """Fetch contribution data directly from official GitHub public page first (source of truth), with fallback to API."""
+    import time
+    fallback_url = f'https://github.com/users/Balajitechlabs/contributions?_t={int(time.time())}'
+    req_fb = urllib.request.Request(fallback_url, headers={
+        'User-Agent': 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36',
+        'Cache-Control': 'no-cache',
+        'Pragma': 'no-cache'
+    })
     try:
         with urllib.request.urlopen(req_fb, timeout=10) as resp:
             html_content = resp.read().decode('utf-8')
@@ -34,14 +29,26 @@ def fetch_contributions_data():
                 cell_id = id_m.group(1) if id_m else ''
                 tip = tooltips.get(cell_id, '')
                 cnt_m = re.search(r'(\d+)\s+contribution', tip)
-                cnt = int(cnt_m.group(1)) if cnt_m else 0
+                cnt = int(cnt_m.group(1)) if cnt_m else (1 if lvl > 0 else 0)
                 conts.append({'date': dt, 'count': cnt, 'level': lvl})
         conts.sort(key=lambda x: x['date'])
-        print(f"Direct GitHub scrape succeeded with {len(conts)} contribution days.")
-        return {'contributions': conts}
+        if len(conts) > 0:
+            print(f"Direct GitHub scrape succeeded with {len(conts)} contribution days.")
+            return {'contributions': conts}
     except Exception as fb_err:
-        print(f"Fallback direct GitHub scrape failed: {fb_err}")
-        return {'contributions': []}
+        print(f"Direct GitHub scrape failed ({fb_err}), falling back to API...")
+
+    url = 'https://github-contributions-api.jogruber.de/v4/Balajitechlabs'
+    req = urllib.request.Request(url, headers={'User-Agent': 'Mozilla/5.0'})
+    try:
+        with urllib.request.urlopen(req, timeout=10) as resp:
+            data = json.loads(resp.read().decode())
+            if data and 'contributions' in data:
+                return data
+    except Exception as e:
+        print(f"API fetch also failed: {e}")
+
+    return {'contributions': []}
 
 def generate_calendar():
     data = fetch_contributions_data()
