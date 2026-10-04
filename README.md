@@ -114,7 +114,7 @@
 <a href="https://github.com/Balajitechlabs"><img src="https://discord-music-nine.vercel.app/api/stats" width="410" style="max-width: 100%; border-radius: 12px; margin-bottom: 10px;" alt="GitHub Profile Stats" /></a>
 </p>
 
-<img src="https://discord-music-nine.vercel.app/api/calendar" width="100%" style="display: block; margin-top: 12px;" alt="GitHub Contribution Calendar" />
+<img src="icons/calendar.svg" width="100%" style="display: block; margin-top: 12px;" alt="GitHub Contribution Calendar" />
 <hr style="border: none; border-top: 1px solid #30363d; margin: 28px 0 20px 0;" />
 <div align="center">
 <a href="https://komarev.com/ghpvc/?username=Balajitechlabs" title="Profile Views"><img src="icons/footer_wave.svg" width="100%" style="display: block;" alt="Balajitechlabs Footer" /></a>
