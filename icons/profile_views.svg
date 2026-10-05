@@ -37,5 +37,5 @@
 
   <!-- Value Pill (Inverted Solid White) -->
   <rect x="130" y="4" width="64" height="22" rx="4" class="count-bg" />
-  <text x="162" y="18.5" text-anchor="middle" class="count-text">1,541+</text>
+  <text x="162" y="18.5" text-anchor="middle" class="count-text">1,553+</text>
 </svg>
