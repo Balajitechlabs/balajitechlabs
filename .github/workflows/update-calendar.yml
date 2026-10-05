@@ -35,12 +35,12 @@ jobs:
 
       - name: Commit and Push if Changed
         run: |
-          git config --global user.name "github-actions[bot]"
-          git config --global user.email "github-actions[bot]@users.noreply.github.com"
-          git add icons/calendar.svg icons/profile_views.svg icons/wave.svg icons/footer_wave.svg icons/card_quickdash_top.svg icons/card_btl_top.svg icons/card_quickdash.svg icons/card_btl.svg
+          git config --global user.name "balajtechlabs"
+          git config --global user.email "admin@balajitechlab.com"
+          git add icons/calendar.svg icons/streak.svg icons/profile_views.svg icons/wave.svg icons/footer_wave.svg icons/card_quickdash_top.svg icons/card_btl_top.svg icons/card_quickdash.svg icons/card_btl.svg
           if git diff --staged --quiet; then
-            echo "No calendar, view, or project badge updates at this cycle."
+            echo "No calendar, streak, view, or project badge updates at this cycle."
           else
-            git commit -m "chore(profile): update contribution calendar, views & project badges [skip ci]"
+            git commit -m "chore(profile): update contribution calendar, streak, views & project badges [skip ci]"
             git push
           fi

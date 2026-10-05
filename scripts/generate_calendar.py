@@ -317,6 +317,144 @@ def generate_calendar():
             f.write(svg_content)
         print(f"Synchronized {dev_cal} successfully.")
 
+    return data
+
+def generate_streak(data):
+    if not data:
+        data = fetch_contributions_data()
+    contributions = data.get('contributions', [])
+    contributions = sorted(contributions, key=lambda x: x['date'])
+
+    historical_2025 = 15
+    year_contribs = sum(c.get('count', 0) for c in contributions)
+    total_contributions = year_contribs + historical_2025
+
+    longest_streak = 0
+    longest_start = ''
+    longest_end = ''
+
+    cur_streak = 0
+    cur_start = ''
+
+    for c in contributions:
+        dt = c['date']
+        cnt = c.get('count', 0)
+        if cnt > 0:
+            if cur_streak == 0:
+                cur_start = dt
+            cur_streak += 1
+            if cur_streak > longest_streak:
+                longest_streak = cur_streak
+                longest_start = cur_start
+                longest_end = dt
+        else:
+            cur_streak = 0
+
+    active_streak = 0
+    active_start = ''
+    active_end = ''
+
+    today_d = datetime.date.today()
+    today_iso = today_d.isoformat()
+    date_map = {c['date']: c.get('count', 0) for c in contributions}
+
+    check_d = today_d
+    if date_map.get(today_iso, 0) == 0:
+        check_d = today_d - datetime.timedelta(days=1)
+
+    if date_map.get(check_d.isoformat(), 0) > 0:
+        active_end = check_d.isoformat()
+        while date_map.get(check_d.isoformat(), 0) > 0:
+            active_streak += 1
+            active_start = check_d.isoformat()
+            check_d = check_d - datetime.timedelta(days=1)
+
+    def fmt_d(iso_str):
+        if not iso_str: return ''
+        d = datetime.date.fromisoformat(iso_str)
+        return d.strftime('%b %-d')
+
+    earliest_yr = contributions[0]['date'][:4] if contributions else '2025'
+    total_dates = f"{earliest_yr} - Present"
+    active_dates = f"{fmt_d(active_start)} - {fmt_d(active_end)}" if active_streak > 0 else "No active streak"
+    longest_dates = f"{fmt_d(longest_start)} - {fmt_d(longest_end)}" if longest_streak > 0 else "N/A"
+
+    svg_streak = f'''<svg width="495" height="195" viewBox="0 0 495 195" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="streakPulse" x1="-100%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#222222" />
+      <stop offset="50%" stop-color="#ffffff" stop-opacity="1" />
+      <stop offset="100%" stop-color="#222222" />
+      <animate attributeName="x1" values="-100%;100%" dur="3s" repeatCount="indefinite" />
+      <animate attributeName="x2" values="0%;200%" dur="3s" repeatCount="indefinite" />
+    </linearGradient>
+  </defs>
+  <style>
+    .card-bg {{ fill: #000000; stroke: #2a2a2a; stroke-width: 1.5; rx: 12px; }}
+    .stat-number {{ font-family: -apple-system, BlinkMacSystemFont, 'SF Mono', monospace; font-size: 28px; font-weight: 800; fill: #ffffff; letter-spacing: 0.5px; }}
+    .stat-label {{ font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', monospace; font-size: 10px; font-weight: 700; fill: #ffffff; letter-spacing: 0.8px; }}
+    .stat-dates {{ font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; font-size: 9.5px; font-weight: 500; fill: #888888; }}
+    .divider {{ stroke: #2a2a2a; stroke-width: 1; }}
+    .fire-icon {{ fill: #ffffff; }}
+    @media (prefers-color-scheme: light) {{
+      .card-bg {{ fill: #ffffff; stroke: #000000; }}
+      .stat-number {{ fill: #000000; }}
+      .stat-label {{ fill: #000000; }}
+      .stat-dates {{ fill: #666666; }}
+      .divider {{ stroke: #e0e0e0; }}
+      .fire-icon {{ fill: #000000; }}
+    }}
+  </style>
+
+  <!-- Card Background -->
+  <rect x="1" y="1" width="493" height="193" rx="12" class="card-bg" />
+
+  <!-- Animated Top Accent Line -->
+  <line x1="16" y1="1" x2="160" y2="1" stroke="url(#streakPulse)" stroke-width="2" stroke-linecap="round" />
+
+  <!-- Section 1: Total Contributions (Left) -->
+  <g transform="translate(82, 0)">
+    <text x="0" y="75" text-anchor="middle" class="stat-number">{total_contributions}</text>
+    <text x="0" y="102" text-anchor="middle" class="stat-label">TOTAL CONTRIBUTIONS</text>
+    <text x="0" y="125" text-anchor="middle" class="stat-dates">{total_dates}</text>
+  </g>
+
+  <!-- Divider 1 -->
+  <line x1="165" y1="35" x2="165" y2="160" class="divider" />
+
+  <!-- Section 2: Current Streak (Center - Hero with Flame Icon) -->
+  <g transform="translate(247, 0)">
+    <g transform="translate(-8, 22) scale(1)">
+      <path class="fire-icon" d="M8 0c-.34 0-.67.14-.9.39C5.39 2.22 3.5 4.9 3.5 8c0 3.86 3.14 7 7 7s7-3.14 7-7c0-2.07-.94-4.04-2.22-5.46-.35-.38-.88-.54-1.39-.4-.51.13-.9.51-1.03 1.02-.32 1.25-1.2 2.33-2.36 2.89-.13-.74-.46-1.55-.95-2.26C9.17 3.2 8.78 1.95 8.1 0.47A.996.996 0 0 0 8 0Z" />
+    </g>
+    <text x="0" y="75" text-anchor="middle" class="stat-number">{active_streak}</text>
+    <text x="0" y="102" text-anchor="middle" class="stat-label">CURRENT STREAK</text>
+    <text x="0" y="125" text-anchor="middle" class="stat-dates">{active_dates}</text>
+  </g>
+
+  <!-- Divider 2 -->
+  <line x1="330" y1="35" x2="330" y2="160" class="divider" />
+
+  <!-- Section 3: Longest Streak (Right) -->
+  <g transform="translate(412, 0)">
+    <text x="0" y="75" text-anchor="middle" class="stat-number">{longest_streak}</text>
+    <text x="0" y="102" text-anchor="middle" class="stat-label">LONGEST STREAK</text>
+    <text x="0" y="125" text-anchor="middle" class="stat-dates">{longest_dates}</text>
+  </g>
+</svg>'''
+
+    streak_path = os.path.join(BASE_DIR, 'icons', 'streak.svg')
+    with open(streak_path, 'w') as f:
+        f.write(svg_streak)
+    print(f"Generated {streak_path} successfully (Active: {active_streak}, Longest: {longest_streak}, Total: {total_contributions}).")
+
+    dev_icons_dir = '/Users/btl/Developer/icons'
+    if os.path.exists(dev_icons_dir) and os.path.abspath(os.path.join(BASE_DIR, 'icons')) != os.path.abspath(dev_icons_dir):
+        dev_streak = os.path.join(dev_icons_dir, 'streak.svg')
+        with open(dev_streak, 'w') as f:
+            f.write(svg_streak)
+        print(f"Synchronized {dev_streak} successfully.")
+
 def update_profile_views():
     try:
         req = urllib.request.Request('https://komarev.com/ghpvc/?username=Balajitechlabs', headers={'User-Agent': 'Mozilla/5.0'})
@@ -528,7 +666,8 @@ def update_project_cards():
         print(f"Error updating Balajitechlab.com card: {e}")
 
 if __name__ == '__main__':
-    generate_calendar()
+    data = generate_calendar()
+    generate_streak(data)
     update_profile_views()
     update_project_cards()
     try:
