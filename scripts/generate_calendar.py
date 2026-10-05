@@ -398,9 +398,139 @@ def update_profile_views():
                     f.write(w_updated)
                 print(f"Synchronized {dev_w} with count {count_str}+.")
 
+def get_github_repo_metadata(repo_name):
+    token = os.environ.get('GITHUB_TOKEN')
+    headers = {'User-Agent': 'Mozilla/5.0'}
+    if token:
+        headers['Authorization'] = f'Bearer {token}'
+    
+    url_repo = f'https://api.github.com/repos/Balajitechlabs/{repo_name}'
+    req_r = urllib.request.Request(url_repo, headers=headers)
+    with urllib.request.urlopen(req_r, timeout=10) as r:
+        repo_data = json.loads(r.read().decode())
+
+    url_commits = f'https://api.github.com/repos/Balajitechlabs/{repo_name}/commits?per_page=1'
+    req_c = urllib.request.Request(url_commits, headers=headers)
+    with urllib.request.urlopen(req_c, timeout=10) as r:
+        commits = json.loads(r.read().decode())
+
+    commit_badge = 'today'
+    if commits and len(commits) > 0:
+        c_date_str = commits[0]['commit']['committer']['date']
+        c_dt = datetime.datetime.fromisoformat(c_date_str.replace('Z', '+00:00'))
+        now = datetime.datetime.now(datetime.timezone.utc)
+        delta_days = (now.date() - c_dt.date()).days
+        if delta_days == 0:
+            commit_badge = 'today'
+        elif delta_days == 1:
+            commit_badge = '1d ago'
+        elif delta_days < 7:
+            commit_badge = f'{delta_days}d ago'
+        else:
+            commit_badge = c_dt.strftime('%b %d')
+
+    return {
+        'stars': repo_data.get('stargazers_count', 0),
+        'forks': repo_data.get('forks_count', 0),
+        'commit_badge': commit_badge
+    }
+
+def update_project_cards():
+    dev_icons_dir = '/Users/btl/Developer/icons'
+    
+    # 1. Update QuickDash card
+    try:
+        qd_meta = get_github_repo_metadata('quickdash')
+        stars_qd = str(qd_meta['stars'])
+        forks_qd = str(qd_meta['forks'])
+        commit_qd = qd_meta['commit_badge']
+
+        qd_top_path = os.path.join(BASE_DIR, 'icons', 'card_quickdash_top.svg')
+        if os.path.exists(qd_top_path):
+            with open(qd_top_path, 'r') as f:
+                content = f.read()
+            content = re.sub(
+                r'(<!--\s*Last Commit Badge.*?-->\s*<rect[^>]*/>\s*<g[^>]*>.*?</g>\s*<text[^>]*class="badge-text">)([^<]+)(</text>)',
+                rf'\g<1>{commit_qd}\g<3>', content, flags=re.DOTALL
+            )
+            content = re.sub(
+                r'(<!--\s*Star Badge.*?-->\s*<rect[^>]*/>\s*<g[^>]*>.*?</g>\s*<text[^>]*class="badge-text">)([^<]+)(</text>)',
+                rf'\g<1>{stars_qd}\g<3>', content, flags=re.DOTALL
+            )
+            content = re.sub(
+                r'(<!--\s*Fork Badge.*?-->\s*<rect[^>]*/>\s*<g[^>]*>.*?</g>\s*<text[^>]*class="badge-text">)([^<]+)(</text>)',
+                rf'\g<1>{forks_qd}\g<3>', content, flags=re.DOTALL
+            )
+            with open(qd_top_path, 'w') as f:
+                f.write(content)
+            print(f"Updated {qd_top_path}: Stars={stars_qd}, Forks={forks_qd}, Commit={commit_qd}")
+
+            if os.path.exists(dev_icons_dir) and os.path.abspath(os.path.join(BASE_DIR, 'icons')) != os.path.abspath(dev_icons_dir):
+                dev_path = os.path.join(dev_icons_dir, 'card_quickdash_top.svg')
+                with open(dev_path, 'w') as f:
+                    f.write(content)
+
+        qd_path = os.path.join(BASE_DIR, 'icons', 'card_quickdash.svg')
+        if os.path.exists(qd_path):
+            with open(qd_path, 'r') as f:
+                content = f.read()
+            content = re.sub(r'(<text[^>]*class="meta-text"[^>]*>★\s*)([0-9]+)(</text>)', rf'\g<1>{stars_qd}\g<3>', content)
+            with open(qd_path, 'w') as f:
+                f.write(content)
+            print(f"Updated {qd_path}: Stars={stars_qd}")
+            if os.path.exists(dev_icons_dir) and os.path.abspath(os.path.join(BASE_DIR, 'icons')) != os.path.abspath(dev_icons_dir):
+                dev_path = os.path.join(dev_icons_dir, 'card_quickdash.svg')
+                with open(dev_path, 'w') as f:
+                    f.write(content)
+    except Exception as e:
+        print(f"Error updating QuickDash card: {e}")
+
+    # 2. Update Balajitechlab.com card
+    try:
+        btl_meta = get_github_repo_metadata('balajitechlab.com')
+        stars_btl = str(btl_meta['stars'])
+        commit_btl = btl_meta['commit_badge']
+
+        btl_top_path = os.path.join(BASE_DIR, 'icons', 'card_btl_top.svg')
+        if os.path.exists(btl_top_path):
+            with open(btl_top_path, 'r') as f:
+                content = f.read()
+            content = re.sub(
+                r'(<!--\s*Last Commit Badge.*?-->\s*<rect[^>]*/>\s*<g[^>]*>.*?</g>\s*<text[^>]*class="badge-text">)([^<]+)(</text>)',
+                rf'\g<1>{commit_btl}\g<3>', content, flags=re.DOTALL
+            )
+            content = re.sub(
+                r'(<!--\s*Star Badge.*?-->\s*<rect[^>]*/>\s*<g[^>]*>.*?</g>\s*<text[^>]*class="badge-text">)([^<]+)(</text>)',
+                rf'\g<1>{stars_btl}\g<3>', content, flags=re.DOTALL
+            )
+            with open(btl_top_path, 'w') as f:
+                f.write(content)
+            print(f"Updated {btl_top_path}: Stars={stars_btl}, Commit={commit_btl}")
+
+            if os.path.exists(dev_icons_dir) and os.path.abspath(os.path.join(BASE_DIR, 'icons')) != os.path.abspath(dev_icons_dir):
+                dev_path = os.path.join(dev_icons_dir, 'card_btl_top.svg')
+                with open(dev_path, 'w') as f:
+                    f.write(content)
+
+        btl_path = os.path.join(BASE_DIR, 'icons', 'card_btl.svg')
+        if os.path.exists(btl_path):
+            with open(btl_path, 'r') as f:
+                content = f.read()
+            content = re.sub(r'(<text[^>]*class="meta-text"[^>]*>★\s*)([0-9]+)(</text>)', rf'\g<1>{stars_btl}\g<3>', content)
+            with open(btl_path, 'w') as f:
+                f.write(content)
+            print(f"Updated {btl_path}: Stars={stars_btl}")
+            if os.path.exists(dev_icons_dir) and os.path.abspath(os.path.join(BASE_DIR, 'icons')) != os.path.abspath(dev_icons_dir):
+                dev_path = os.path.join(dev_icons_dir, 'card_btl.svg')
+                with open(dev_path, 'w') as f:
+                    f.write(content)
+    except Exception as e:
+        print(f"Error updating Balajitechlab.com card: {e}")
+
 if __name__ == '__main__':
     generate_calendar()
     update_profile_views()
+    update_project_cards()
     try:
         import generate_music_card
         generate_music_card.main()

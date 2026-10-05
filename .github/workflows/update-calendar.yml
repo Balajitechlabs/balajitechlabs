@@ -37,10 +37,10 @@ jobs:
         run: |
           git config --global user.name "github-actions[bot]"
           git config --global user.email "github-actions[bot]@users.noreply.github.com"
-          git add icons/calendar.svg icons/profile_views.svg icons/wave.svg icons/footer_wave.svg
+          git add icons/calendar.svg icons/profile_views.svg icons/wave.svg icons/footer_wave.svg icons/card_quickdash_top.svg icons/card_btl_top.svg icons/card_quickdash.svg icons/card_btl.svg
           if git diff --staged --quiet; then
-            echo "No calendar or view updates at this cycle."
+            echo "No calendar, view, or project badge updates at this cycle."
           else
-            git commit -m "chore(profile): update contribution heatmap calendar & views [skip ci]"
+            git commit -m "chore(profile): update contribution calendar, views & project badges [skip ci]"
             git push
           fi

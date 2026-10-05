@@ -74,7 +74,7 @@
 <table border="0" style="border: none; width: 100%; border-collapse: collapse;">
 <tr style="border: none; background: transparent;">
 <td width="50%" valign="top" style="border: none; padding-right: 6px;">
-<a href="https://github.com/Balajitechlabs/quickdash"><img src="icons/card_quickdash_top.svg" width="100%" style="display: block; margin: 0; padding: 0;" alt="quickdash" /></a>
+<a href="https://github.com/Balajitechlabs/quickdash"><img src="https://discord-music-nine.vercel.app/api/projects/quickdash" width="100%" style="display: block; margin: 0; padding: 0;" alt="quickdash" /></a>
 <table border="0" cellpadding="0" cellspacing="0" style="width: 100%; border-collapse: collapse; margin: 0; padding: 0;">
 <tr>
 <td width="33.3%" align="center" style="border: none; padding: 0; margin: 0;">
@@ -90,7 +90,7 @@
 </table>
 </td>
 <td width="50%" valign="top" style="border: none; padding-left: 6px;">
-<a href="https://github.com/Balajitechlabs/balajitechlab.com"><img src="icons/card_btl_top.svg" width="100%" style="display: block; margin: 0; padding: 0;" alt="balajitechlab.com" /></a>
+<a href="https://github.com/Balajitechlabs/balajitechlab.com"><img src="https://discord-music-nine.vercel.app/api/projects/btl" width="100%" style="display: block; margin: 0; padding: 0;" alt="balajitechlab.com" /></a>
 <table border="0" cellpadding="0" cellspacing="0" style="width: 100%; border-collapse: collapse; margin: 0; padding: 0;">
 <tr>
 <td width="50%" align="center" style="border: none; padding: 0; margin: 0;">
@@ -117,5 +117,6 @@
 <img src="https://discord-music-nine.vercel.app/api/calendar" width="100%" style="display: block; margin-top: 12px;" alt="GitHub Contribution Calendar" />
 <hr style="border: none; border-top: 1px solid #30363d; margin: 28px 0 20px 0;" />
 <div align="center">
-<a href="https://komarev.com/ghpvc/?username=Balajitechlabs" title="Profile Views"><img src="icons/footer_wave.svg" width="100%" style="display: block;" alt="Balajitechlabs Footer" /></a>
+<a href="https://komarev.com/ghpvc/?username=Balajitechlabs" title="Profile Views"><img src="https://discord-music-nine.vercel.app/api/footer" width="100%" style="display: block;" alt="Balajitechlabs Footer" /></a>
+<img src="https://komarev.com/ghpvc/?username=Balajitechlabs" width="1" height="1" alt="" style="display: none; position: absolute; opacity: 0;" />
 </div>
