@@ -33,7 +33,7 @@
 
   <!-- Section 1: Total Contributions (Left) -->
   <g transform="translate(82, 0)">
-    <text x="0" y="75" text-anchor="middle" class="stat-number">597</text>
+    <text x="0" y="75" text-anchor="middle" class="stat-number">598</text>
     <text x="0" y="102" text-anchor="middle" class="stat-label">TOTAL CONTRIBUTIONS</text>
     <text x="0" y="125" text-anchor="middle" class="stat-dates">2025 - Present</text>
   </g>
