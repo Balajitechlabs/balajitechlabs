@@ -33,7 +33,7 @@
 
   <!-- Section 1: Total Contributions (Left) -->
   <g transform="translate(82, 0)">
-    <text x="0" y="75" text-anchor="middle" class="stat-number">608</text>
+    <text x="0" y="75" text-anchor="middle" class="stat-number">609</text>
     <text x="0" y="102" text-anchor="middle" class="stat-label">TOTAL CONTRIBUTIONS</text>
     <text x="0" y="125" text-anchor="middle" class="stat-dates">2025 - Present</text>
   </g>
@@ -46,9 +46,9 @@
     <g transform="translate(-8, 22) scale(1)">
       <path class="fire-icon" d="M8 0c-.34 0-.67.14-.9.39C5.39 2.22 3.5 4.9 3.5 8c0 3.86 3.14 7 7 7s7-3.14 7-7c0-2.07-.94-4.04-2.22-5.46-.35-.38-.88-.54-1.39-.4-.51.13-.9.51-1.03 1.02-.32 1.25-1.2 2.33-2.36 2.89-.13-.74-.46-1.55-.95-2.26C9.17 3.2 8.78 1.95 8.1 0.47A.996.996 0 0 0 8 0Z" />
     </g>
-    <text x="0" y="75" text-anchor="middle" class="stat-number">9</text>
+    <text x="0" y="75" text-anchor="middle" class="stat-number">10</text>
     <text x="0" y="102" text-anchor="middle" class="stat-label">CURRENT STREAK</text>
-    <text x="0" y="125" text-anchor="middle" class="stat-dates">Oct 1 - Oct 9</text>
+    <text x="0" y="125" text-anchor="middle" class="stat-dates">Oct 1 - Oct 10</text>
   </g>
 
   <!-- Divider 2 -->
