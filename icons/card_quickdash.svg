@@ -84,7 +84,7 @@
   <text x="261" y="125" text-anchor="middle" class="pill-text">Material 3</text>
 
   <!-- Star Counter -->
-  <text x="410" y="125" class="meta-text" text-anchor="end">★ 27</text>
+  <text x="410" y="125" class="meta-text" text-anchor="end">★ 26</text>
 
   <!-- Card Internal Divider -->
   <line x1="18" y1="150" x2="442" y2="150" class="divider" />
