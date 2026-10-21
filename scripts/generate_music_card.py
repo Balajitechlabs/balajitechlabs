@@ -17,15 +17,17 @@ REPO_ROOT = os.path.abspath(os.path.join(os.path.dirname(__file__), ".."))
 ICONS_DIR = os.path.join(REPO_ROOT, "icons")
 DEV_ICONS_DIR = "/Users/btl/Developer/icons"
 
+
 def fetch_image_as_base64(img_url):
     try:
-        req = urllib.request.Request(img_url, headers={'User-Agent': 'Mozilla/5.0'})
+        req = urllib.request.Request(img_url, headers={"User-Agent": "Mozilla/5.0"})
         with urllib.request.urlopen(req, timeout=5) as resp:
             data = resp.read()
-            mime = resp.headers.get_content_type() or 'image/jpeg'
+            mime = resp.headers.get_content_type() or "image/jpeg"
             return f"data:{mime};base64,{base64.b64encode(data).decode('utf-8')}"
     except Exception:
         return None
+
 
 def format_time(seconds):
     seconds = max(0, int(seconds))
@@ -33,8 +35,9 @@ def format_time(seconds):
     s = seconds % 60
     return f"{m:02d}:{s:02d}"
 
+
 def generate_offline_svg():
-    return '''<svg width="400" height="140" viewBox="0 0 400 140" fill="none" xmlns="http://www.w3.org/2000/svg">
+    return """<svg width="400" height="140" viewBox="0 0 400 140" fill="none" xmlns="http://www.w3.org/2000/svg">
   <style>
     @keyframes spinReel {
       from { transform: rotate(0deg); }
@@ -115,7 +118,8 @@ def generate_offline_svg():
     <rect class="ambient-line" x="0" y="42" width="70" height="4" rx="2" fill="#ffffff"/>
     <text x="0" y="60" class="font-badge" fill="#555555">MUSIC ENGINE IDLE • WAITING FOR BIT CHORD</text>
   </g>
-</svg>'''
+</svg>"""
+
 
 def generate_playing_svg(title, artist, app_name, img_data_uri, elapsed_sec, total_sec):
     title_esc = html.escape(title)
@@ -133,14 +137,14 @@ def generate_playing_svg(title, artist, app_name, img_data_uri, elapsed_sec, tot
     <rect x="0" y="0" width="72" height="72" rx="10" fill="none" stroke="#282828" stroke-width="1"/>
 '''
     else:
-        artwork_markup = '''
+        artwork_markup = """
     <rect x="0" y="0" width="72" height="72" rx="10" fill="#141414" stroke="#282828"/>
     <circle cx="36" cy="36" r="30" fill="#0a0a0a" stroke="#1f1f1f" stroke-width="1.5"/>
     <circle cx="36" cy="36" r="22" fill="none" stroke="#262626" stroke-width="1"/>
     <circle cx="36" cy="36" r="14" fill="none" stroke="#333333" stroke-width="1"/>
     <circle cx="36" cy="36" r="7" fill="#ffffff"/>
     <circle cx="36" cy="36" r="2.5" fill="#000000"/>
-'''
+"""
 
     return f'''<svg width="400" height="140" viewBox="0 0 400 140" fill="none" xmlns="http://www.w3.org/2000/svg">
   <style>
@@ -214,58 +218,68 @@ def generate_playing_svg(title, artist, app_name, img_data_uri, elapsed_sec, tot
   </g>
 </svg>'''
 
+
 def main():
     import time
+
     now_ms = time.time() * 1000
 
     url = f"https://api.lanyard.rest/v1/users/{DISCORD_USER_ID}"
-    req = urllib.request.Request(url, headers={'User-Agent': 'Mozilla/5.0'})
+    req = urllib.request.Request(url, headers={"User-Agent": "Mozilla/5.0"})
     data = {}
     try:
         with urllib.request.urlopen(req, timeout=5) as resp:
-            data = json.loads(resp.read().decode()).get('data', {})
+            data = json.loads(resp.read().decode()).get("data", {})
     except Exception as e:
         print(f"Error fetching Lanyard: {e}")
 
-    activities = data.get('activities', [])
+    activities = data.get("activities", [])
     music_act = None
     for act in activities:
-        if act.get('type') == 2 or 'music' in act.get('name', '').lower() or act.get('details'):
+        if (
+            act.get("type") == 2
+            or "music" in act.get("name", "").lower()
+            or act.get("details")
+        ):
             music_act = act
             break
 
     svg_content = ""
-    if not music_act or data.get('discord_status') == 'offline':
+    if not music_act or data.get("discord_status") == "offline":
         print("User is offline/idle -> Generating Midnight Studio Deck")
         svg_content = generate_offline_svg()
     else:
-        title = music_act.get('details', 'Playing Music')
-        artist = music_act.get('state', 'Unknown Artist')
-        app_name = music_act.get('name', 'btl music 🎶')
-        timestamps = music_act.get('timestamps', {})
-        start_ms = timestamps.get('start', now_ms)
-        end_ms = timestamps.get('end', now_ms + 180000)
+        title = music_act.get("details", "Playing Music")
+        artist = music_act.get("state", "Unknown Artist")
+        app_name = music_act.get("name", "btl music 🎶")
+        timestamps = music_act.get("timestamps", {})
+        start_ms = timestamps.get("start", now_ms)
+        end_ms = timestamps.get("end", now_ms + 180000)
 
         total_sec = max(1, (end_ms - start_ms) / 1000)
         elapsed_sec = min(total_sec, max(0, (now_ms - start_ms) / 1000))
 
         # Extract artwork URL if available
-        large_image = music_act.get('assets', {}).get('large_image', '')
+        large_image = music_act.get("assets", {}).get("large_image", "")
         img_data_uri = None
         if large_image:
-            if large_image.startswith('mp:external/'):
+            if large_image.startswith("mp:external/"):
                 # Extract external URL
-                parts = large_image.split('/https/')
+                parts = large_image.split("/https/")
                 if len(parts) > 1:
-                    raw_url = 'https://' + parts[1]
+                    raw_url = "https://" + parts[1]
                     img_data_uri = fetch_image_as_base64(raw_url)
-            elif large_image.startswith('spotify:'):
-                spotify_id = large_image.replace('spotify:', '')
+            elif large_image.startswith("spotify:"):
+                spotify_id = large_image.replace("spotify:", "")
                 raw_url = f"https://i.scdn.co/image/{spotify_id}"
                 img_data_uri = fetch_image_as_base64(raw_url)
 
-        print(f"User is playing: {title} by {artist} ({format_time(elapsed_sec)} / {format_time(total_sec)})")
-        svg_content = generate_playing_svg(title, artist, app_name, img_data_uri, elapsed_sec, total_sec)
+        print(
+            f"User is playing: {title} by {artist} ({format_time(elapsed_sec)} / {format_time(total_sec)})"
+        )
+        svg_content = generate_playing_svg(
+            title, artist, app_name, img_data_uri, elapsed_sec, total_sec
+        )
 
     # Save to icons/music_card.svg
     os.makedirs(ICONS_DIR, exist_ok=True)
@@ -280,6 +294,7 @@ def main():
         with open(dev_target, "w", encoding="utf-8") as f:
             f.write(svg_content)
         print(f"Synced: {dev_target}")
+
 
 if __name__ == "__main__":
     main()
